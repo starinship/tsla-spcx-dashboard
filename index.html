@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tesla × SpaceX — Investment Dashboard (2026/09/17)</title>
+<title>Tesla × SpaceX — Investment Dashboard (2026/09/20)</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
 /* ===================== GLOBAL ===================== */
@@ -419,7 +419,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 <div class="apphead">
   <div class="ek">Tesla × SpaceX · Musk-System Equity Dashboard</div>
   <h1>特斯拉 × SpaceX 投資儀表板</h1>
-  <div class="as">資料截至 <b>2026-09-17</b>（澳門時間）｜ 單位：<b>億美元</b>（$1B＝10 億）｜ 點按下方按鈕切換頁面 ｜ <b style="color:#f85149">個人研究筆記·非投顧·非機構報告</b></div>
+  <div class="as">資料截至 <b>2026-09-20</b>（澳門時間）｜ 單位：<b>億美元</b>（$1B＝10 億）｜ 點按下方按鈕切換頁面 ｜ <b style="color:#f85149">個人研究筆記·非投顧·非機構報告</b></div>
   <div class="lylegend">
     <span><span class="ly L1">L1</span> 官方（SEC 8-K / S-1 / IR）</span>
     <span><span class="ly L2">L2</span> 權威二手（有出處）</span>
@@ -431,27 +431,27 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
   <div class="tabbtn" id="btnA" onclick="showView('A')">
     <div class="ic">🤖</div>
     <div><div class="t1">Tesla AI 動態</div>
-    <div class="t2">NHTSA Special Order · FSD 14.3 · TSLA $358</div></div>
+    <div class="t2">NHTSA 仍待 9/30 · FSD 14.3.10 · TSLA $364</div></div>
   </div>
   <div class="tabbtn active" id="btnN" onclick="showView('N')">
     <div class="ic">📰</div>
     <div><div class="t1">SpaceX 動態<span class="new">LIVE</span></div>
-    <div class="t2">F14 官網 9/22 · 9/9 鎖倉過 · SPCX $151</div></div>
+    <div class="t2">F14 NET 9/28 · 9/24 鎖倉 · SPCX $153</div></div>
   </div>
   <div class="tabbtn" id="btnC" onclick="showView('C')">
     <div class="ic">📉</div>
     <div><div class="t1">增速追蹤</div>
-    <div class="t2">Falcon YTD ~107 · 訂戶 1200 萬 L1 · CapEx</div></div>
+    <div class="t2">Falcon YTD ~109 · 訂戶 1200 萬 L1 · CapEx</div></div>
   </div>
   <div class="tabbtn" id="btnT" onclick="showView('T')">
     <div class="ic">🚗</div>
     <div><div class="t1">Tesla 逐季深度</div>
-    <div class="t2">Q2 營收 282 億超 · EPS 遜 · 股價 $358</div></div>
+    <div class="t2">Q2 營收 282 億超 · EPS 遜 · 股價 $364</div></div>
   </div>
   <div class="tabbtn" id="btnS" onclick="showView('S')">
     <div class="ic">🚀</div>
     <div><div class="t1">SpaceX 逐季深度</div>
-    <div class="t2">Q2 營收 78 億超 · CapEx 184 億 · SPCX $151</div></div>
+    <div class="t2">Q2 營收 78 億超 · CapEx 184 億 · SPCX $153</div></div>
   </div>
 </div>
 
@@ -461,10 +461,10 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 <div class="view viewN" id="viewA">
 <div class="kicker">Tesla AI · Autonomy Tracker · 選擇權業務</div>
 <p style="font-size:23px;font-weight:800;margin:8px 0 4px">🤖 Optimus · FSD · Robotaxi · Terafab</p>
-  <div class="note">TSLA 估值「選擇權」主軸 ｜ 資料截至 <b>2026-09-17</b> ｜ 美 9/16 收 <b>$358.08</b>（+0.42%）｜ 9/17 美股休市｜ 9/3 Cybercab 當日收 $376.37（+5.4%） ｜ <span class="ly L1">L1</span> 8-K／IR ｜ <span class="ly L2">L2</span> 官方發言／權威媒體 ｜ 財報數字見「Tesla 逐季深度」</div>
+  <div class="note">TSLA 估值「選擇權」主軸 ｜ 資料截至 <b>2026-09-20</b> ｜ 美 9/18 收 <b>$364.27</b>（−0.53%；盤後約 $364.18）｜ 9/19–20 週末休市｜ 9/3 Cybercab 當日收 $376.37（+5.4%） ｜ <span class="ly L1">L1</span> 8-K／IR ｜ <span class="ly L2">L2</span> 官方發言／權威媒體 ｜ 財報數字見「Tesla 逐季深度」</div>
 
 <div class="callout info">
-  <b>怎麼讀：</b>四條線不是四個獨立故事——<b>FSD 軟體</b>餵 <b>Robotaxi／Cybercab</b>，兩者都要 <b>AI 推論晶片（AI5 → Terafab）</b>；<b>Optimus</b> 把同一套「視覺＋端側算力」裝進機器人。近週硬催化：<b>9/3 Austin Cybercab 已上路</b>；<b>9/10 NHTSA Special Order</b> 升級（宣誓回應期限 9/30，自 AQ26002）；<b>FSD v14.3.9／Automatic Collision Evasion</b> 隨 2026.27.6 開推（約 9/8–9）；內華達最多 <b>5,000 台</b>許可仍在。2026 H2 仍盯：Optimus 首批產出、Cybercab 擴隊／付費、Robotaxi 擴城、監管路徑。<b>Q2 財報已出</b>：營收大超、EPS／毛利／FCF 承壓。
+  <b>怎麼讀：</b>四條線不是四個獨立故事——<b>FSD 軟體</b>餵 <b>Robotaxi／Cybercab</b>，兩者都要 <b>AI 推論晶片（AI5 → Terafab）</b>；<b>Optimus</b> 把同一套「視覺＋端側算力」裝進機器人。近週硬催化：<b>9/3 Austin Cybercab 已上路</b>；<b>9/10 NHTSA Special Order</b> 升級（宣誓回應期限仍 <b>9/30</b>，截至本頁未見公開回覆）；<b>FSD v14.3.10／ACE</b> 隨 2026.27.10 開推（9/19，HW4）；德州 TxDMV 名冊 Cybercab <b>58 台</b>（9/18 再登記 9 台）。內華達最多 <b>5,000 台</b>許可仍在。2026 H2 仍盯：Optimus 首批產出、Cybercab 擴隊／付費、Robotaxi 擴城、監管路徑。<b>Q2 財報已出</b>：營收大超、EPS／毛利／FCF 承壓。
 </div>
 
 <div class="skpi">
@@ -531,12 +531,12 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
       <tbody>
         <tr class="done"><td class="ph">1</td><td><span class="pst">季報揭露主動訂閱</span><div class="psd">25Q1 85 萬 → 26Q1 128 萬 → 26Q2 <b>148 萬</b>（+56% YoY，L1）</div></td><td class="pstt">完成</td></tr>
         <tr class="done"><td class="ph">2</td><td><span class="pst">Robotaxi 無監督運行</span><div class="psd">同一堆疊服務多城；軟體已在載客場景驗證</div></td><td class="pstt">運營中</td></tr>
-        <tr class="run"><td class="ph">3</td><td><span class="pst">FSD v15 上線車隊</span><div class="psd">Q2 電話會：Robotaxi 已跑 v15；Cybercab 同軟體；更廣無監督待里程／監管</div></td><td class="pstt">進行中</td></tr>
+        <tr class="run"><td class="ph">3</td><td><span class="pst">FSD v14.3.10／ACE 開推</span><div class="psd">2026.27.10（9/19）：HW4 <b>v14.3.10</b>＋Automatic Collision Evasion；HW3 續 v14.2 Lite。車隊 Robotaxi 另跑 v15</div></td><td class="pstt">進行中</td></tr>
         <tr class="todo"><td class="ph">4</td><td><span class="pst">監管下的個人車無監督</span><div class="psd">與 Robotaxi 車隊不同；時間表高度不確定</div></td><td class="pstt">未落地</td></tr>
         <tr class="todo"><td class="ph">5</td><td><span class="pst">軟體毛利規模化</span><div class="psd">訂閱 ARPU × 滲透率；服務營收已見複利但 FSD 拆分有限</div></td><td class="pstt">觀察中</td></tr>
       </tbody>
     </table>
-    <div class="vfoot"><b>盯什麼：</b>Q3 訂閱能否再淨增；北美新車 FSD 滲透（Q2 約 55%）；無監督里程與干預率；軟體 ARPU 拆分。</div>
+    <div class="vfoot"><b>盯什麼：</b>Q3 訂閱能否再淨增；北美新車 FSD 滲透（Q2 約 55%）；v14.3.10／ACE 實路；無監督里程與干預率；軟體 ARPU 拆分。</div>
   </div>
 
   <!-- Robotaxi / Cybercab -->
@@ -551,7 +551,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
       </div>
       <div class="vmeta">
         <span class="vm">範圍 <b>7 大都會</b></span>
-        <span class="vm">Cybercab <b>Austin 載客中</b></span>
+        <span class="vm">Cybercab <b>德州名冊 58</b></span>
         <span class="vm">內華達 <b>5,000 台許可</b></span>
         <span class="vm">軟體 <b>FSD v15</b></span>
       </div>
@@ -562,12 +562,12 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
       <tbody>
         <tr class="done"><td class="ph">1</td><td><span class="pst">Austin 無監督載客</span><div class="psd">2026 初起；6/3 全都會區無監督擴張</div></td><td class="pstt">運營中</td></tr>
         <tr class="done"><td class="ph">2</td><td><span class="pst">擴至 7 大都會無監督</span><div class="psd">Q2：ramping unsupervised 多城；車隊仍遠低於 Waymo</div></td><td class="pstt">運營中</td></tr>
-        <tr class="done"><td class="ph">3</td><td><span class="pst">Cybercab Giga Texas 量產 + 9/3 上路</span><div class="psd">9/3 Austin：無方向盤／無踏板雙座 Cybercab 上路載客（Robotaxi App）；Unboxed 製程展示；邀請制、無公開直播／無台數時間表（L2 AP／Electrek）</div></td><td class="pstt">已發生</td></tr>
+        <tr class="done"><td class="ph">3</td><td><span class="pst">Cybercab Giga Texas 量產 + 9/3 上路</span><div class="psd">9/3 Austin：無方向盤／無踏板雙座 Cybercab 上路載客（Robotaxi App）；TxDMV 名冊 9/18 再登記 9 台至 <b>58</b>（同授權 Model Y 390／合計 448；登記≠當下在跑）</div></td><td class="pstt">已發生</td></tr>
         <tr class="run"><td class="ph">4</td><td><span class="pst">內華達 Clark County 營運許可</span><div class="psd">8/20 核准 AV 網路公司、首年最多 <b>5,000 台</b>（此前臨時許可僅 10 台）；初期仍 Model Y，Cybercab 後加入；宣稱 30 日內可載客</div></td><td class="pstt">許可已下</td></tr>
-        <tr class="run"><td class="ph">5</td><td><span class="pst">NHTSA 審計 + 付費／規模化 vs Waymo</span><div class="psd">9/3 開啟 Open Audit <b>AQ26002</b>（約 1,000 台自證 FMVSS）；車隊仍遠低 Waymo（~4,000）；付費時點未官宣</div></td><td class="pstt">監管中</td></tr>
+        <tr class="run"><td class="ph">5</td><td><span class="pst">NHTSA Special Order + 付費／規模化 vs Waymo</span><div class="psd">AQ26002（9/3）升級 <b>Special Order</b>（9/10，宣誓至 9/30）；截至 9/20 未見公開回覆。車隊仍遠低 Waymo；付費時點未官宣</div></td><td class="pstt">監管中</td></tr>
       </tbody>
     </table>
-    <div class="vfoot"><b>盯什麼：</b>NHTSA AQ26002 是否升級執法；Cybercab 台數／付費日；內華達 5,000 許可是否落地；車隊 vs Waymo。9/3 後股價 −5.9%——市場懲罰「上路但缺數字」。</div>
+    <div class="vfoot"><b>盯什麼：</b>NHTSA Special Order 9/30 回覆內容；Cybercab 德州名冊 58 vs 實際在跑；內華達 5,000 許可是否落地；車隊 vs Waymo。9/3 後曾 −5.9%；近週收復至 $364。</div>
   </div>
 
   <!-- Terafab -->
@@ -644,7 +644,9 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
   <div class="ev big"><span class="ed">2026/9/4</span><span class="et">TSLA 收 <b>$354.08</b>（−5.9%）— Cybercab「無數字」＋監管壓力；9/3 曾收 $376.37（+5.4%）</span></div>
   <div class="ev big"><span class="ed">2026/9/8–9</span><span class="et"><b>FSD v14.3.9</b>／HW3 <b>v14.2 Lite</b>＋<b>Automatic Collision Evasion</b>（軟體 2026.27.6 · L2 Teslarati／Not a Tesla App）</span></div>
   <div class="ev big"><span class="ed">2026/9/10</span><span class="et">NHTSA <b>Special Order</b>：Cybercab 無方向盤／踏板／鏡如何符合 FMVSS——宣誓回應至 <b>9/30</b>（L2 Electrek）</span></div>
-  <div class="ev big"><span class="ed">2026/9/16</span><span class="et">TSLA 收 <b>$358.08</b>（+0.42% vs 前收 $356.58）· 區間 $354.89–$365.10 · 9/17 休市</span></div>
+  <div class="ev big"><span class="ed">2026/9/16</span><span class="et">TSLA 收 <b>$358.08</b>（+0.42% vs 前收 $356.58）· 區間 $354.89–$365.10</span></div>
+  <div class="ev big"><span class="ed">2026/9/18</span><span class="et">TSLA 收 <b>$364.27</b>（−0.53% vs 9/17 $366.20）· 區間 $360.75–$370.90 · 盤後約 $364.18 · 9/19–20 週末</span></div>
+  <div class="ev big"><span class="ed">2026/9/18–19</span><span class="et">德州 TxDMV Cybercab 名冊 <b>58 台</b>（9/18 +9）｜ FSD <b>v14.3.10</b>／2026.27.10 開推（9/19）｜ NHTSA Special Order 仍待 <b>9/30</b></span></div>
   <div class="ev"><span class="ed">2026 H2</span><span class="et">Cybercab 擴隊／付費；Robotaxi 7 城＋內華達能否把車隊從「數十–百」拉到「千＋」</span></div>
   <div class="ev"><span class="ed">2027</span><span class="et">Giga Texas Optimus 專廠放量窗口（公司長期目標，非承諾）</span></div>
 </div>
@@ -659,7 +661,9 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
   <div class="crow"><div class="cd">9/4</div><div class="ce">TSLA 收 <b>$354.08</b>（−5.9%）· 週五美盤後休市至 9/7</div><div class="cs" style="color:#22c55e">已發生</div></div>
   <div class="crow"><div class="cd">9/8–9</div><div class="ce"><b>FSD v14.3.9</b>＋Automatic Collision Evasion 開推（2026.27.6）</div><div class="cs" style="color:#22c55e">已發生</div></div>
   <div class="crow"><div class="cd">9/10</div><div class="ce">NHTSA <b>Special Order</b>（Cybercab FMVSS）· 回應期限 9/30</div><div class="cs" style="color:#ef4444">監管</div></div>
-  <div class="crow"><div class="cd">9/16</div><div class="ce">TSLA 收 <b>$358.08</b>（+0.42%）· 9/17 美股休市</div><div class="cs" style="color:#22c55e">已發生</div></div>
+  <div class="crow"><div class="cd">9/16</div><div class="ce">TSLA 收 <b>$358.08</b>（+0.42%）</div><div class="cs" style="color:#22c55e">已發生</div></div>
+  <div class="crow"><div class="cd">9/18</div><div class="ce">TSLA 收 <b>$364.27</b>（−0.53%）· 德州 Cybercab 名冊 <b>58</b></div><div class="cs" style="color:#22c55e">已發生</div></div>
+  <div class="crow"><div class="cd">9/19</div><div class="ce">FSD <b>v14.3.10</b>／2026.27.10 開推（HW4 ACE）</div><div class="cs" style="color:#22c55e">已發生</div></div>
   <div class="crow"><div class="cd">9/30</div><div class="ce">NHTSA Special Order 宣誓回應截止</div><div class="cs" style="color:#f5b942">期限</div></div>
   <div class="crow"><div class="cd">9 月</div><div class="ce">Special Order 走向 · 內華達載客 · Cybercab 台數／付費 · Optimus 完整機</div><div class="cs" style="color:#5b8def">驗證點</div></div>
   <div class="crow"><div class="cd">持續</div><div class="ce">Robotaxi 7 城台數、安全里程／事故；Terafab 設備／動土；股價 vs 選擇權兌現</div><div class="cs" style="color:#94a3b8">追蹤</div></div>
@@ -682,6 +686,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 
 <div class="changelog">
   <b>本頁變更</b>
+  <div class="cl-item"><span class="cl-d">2026-09-20</span> 美 9/18 TSLA <b>$364.27</b>（−0.53%；9/17 $366.20）；FSD <b>v14.3.10</b>（9/19）；德州 Cybercab 名冊 <b>58</b>；NHTSA Special Order 仍待 9/30（未見公開回覆）</div>
   <div class="cl-item"><span class="cl-d">2026-09-17</span> 美 9/16 TSLA <b>$358.08</b>（+0.42%）；NHTSA <b>Special Order</b>（9/10，回應至 9/30）；FSD <b>v14.3.9／ACE</b>（~9/8–9）；9/3 Cybercab 上路＋AQ26002 仍在</div>
   <div class="cl-item"><span class="cl-d">2026-09-06</span> 美 9/4 TSLA <b>$354.08</b>（−5.9%）；<b>9/3 Cybercab 上路</b>（Austin 載客、無公開直播／無台數）；NHTSA <b>AQ26002</b>；9/3 收 $376.37（+5.4%）</div>
   <div class="cl-item"><span class="cl-d">2026-09-01</span> 美 8/31 TSLA <b>$367.95</b>（+5.5%）；<b>9/3 Cybercab 發表會</b>；內華達 5,000 台許可；JPM：Optimus 對外 H2'27；9/1 盤中回吐</div>
@@ -695,7 +700,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 <footer>
   <b>資料來源．</b><span class="ly L1">L1</span> Tesla 8-K／IR 季報；
   <span class="ly L2">L2</span> 財報電話會、Musk 公開發言、Electrek／Teslarati／CNBC／Wikipedia（Terafab）。
-  產量與投產日屬管理層前瞻，常延遲。<b>免責：</b>個人研究筆記，非投資建議。更新 2026-09-17。
+  產量與投產日屬管理層前瞻，常延遲。<b>免責：</b>個人研究筆記，非投資建議。更新 2026-09-20。
 </footer>
 </div><!-- /viewA -->
 
@@ -705,41 +710,41 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 <div class="view active viewN" id="viewN">
 <div class="kicker">SpaceX News · Starship Tracker · 動態追蹤</div>
 <p style="font-size:23px;font-weight:800;margin:8px 0 4px">📰 SpaceX 最新動態 · Starship 測試進程</p>
-  <div class="note">聚焦 <b>Flight 14（B21 × S41）</b> · <b>首次入軌</b>＋Starlink V3 入軌部署 · 艦捕已延後 ｜ 資料截至 <b>2026-09-17</b> ｜ <b>時間一律澳門（UTC+8）</b> ｜ <span class="ly L1">L1</span> SpaceX IR／Musk ｜ <span class="ly L2">L2</span> NSF／Wikipedia／媒體</div>
+  <div class="note">聚焦 <b>Flight 14（B21 × S41）</b> · <b>首次入軌</b>＋Starlink V3 入軌部署 · 艦捕已延後 ｜ 資料截至 <b>2026-09-20</b> ｜ <b>時間一律澳門（UTC+8）</b> ｜ <span class="ly L1">L1</span> SpaceX IR／Musk ｜ <span class="ly L2">L2</span> NSF／Wikipedia／媒體</div>
 
 <!-- ===== F14 HERO ===== -->
 <div class="hero">
-  <div class="htag">Next Major Event · Starship Flight 14 · 官網窗口 9/22 · 首次入軌</div>
+  <div class="htag">Next Major Event · Starship Flight 14 · SpaceX NET 9/28 · 首次入軌</div>
   <h2>🚀 Flight 14 · Super Heavy B21 × Starship S41</h2>
-  <p class="hsub">Starbase Pad 2（預期）｜ 堆疊 <b>B21 × S41</b>（v3／Block 3 · L2）｜ <b>首次入軌 + 26 顆 Starlink V3 入軌部署</b>（約 6 圈／~10 小時）｜ 飛船預期<b>太平洋智利以西濺落</b>｜ 助推器墨西哥灣｜ <b>艦捕延後</b>（Musk 8/20）<br><span style="opacity:.85;font-size:12.5px">SpaceX 官網（9/15）：窗口 <b>9/22 07:15 CT</b> 起 75 分鐘（備援 9/23），仍 <b>pending regulatory approval</b>。原 NET 9/15（FCC／CADENA）已滑。9/2 FAA EA／FONSI ≠ 發射執照。CFO Bret Johnsen（9/10）：本飛為「revenue-generating」V3 運營部署。以 spacex.com 為準</span></p>
+  <p class="hsub">Starbase Pad 2（預期）｜ 堆疊 <b>B21 × S41</b>（v3／Block 3 · L2）｜ <b>首次入軌 + 26 顆 Starlink V3 入軌部署</b>（約 6 圈／~10 小時）｜ 飛船預期<b>太平洋智利以西濺落</b>｜ 助推器墨西哥灣｜ <b>艦捕延後</b>（Musk 8/20）<br><span style="opacity:.85;font-size:12.5px">SpaceX（9/17 X）：改盯 <b>as early as Monday, September 28</b>，仍 <b>pending regulatory approval</b>，未公布新原因。先前官網窗 9/22 07:15 CT／75 分鐘（備援 9/23）已滑。印度媒體轉述 9/28 窗仍開於 07:15 CT。9/2 FAA EA／FONSI ≠ 發射執照。CFO Bret Johnsen（9/10）：本飛為「revenue-generating」V3 運營部署。以 spacex.com 為準</span></p>
   <div class="cdown" id="f13cd">
     <div class="u"><b id="cdD">—</b><span>天</span></div>
     <div class="u"><b id="cdH">—</b><span>時</span></div>
     <div class="u"><b id="cdM">—</b><span>分</span></div>
     <div class="u"><b id="cdS">—</b><span>秒</span></div>
-    <div class="u" style="min-width:auto;padding:10px 16px;text-align:left"><b id="cdLbl" style="font-size:14px;color:#f5b942">計算中…</b><span>官網窗口 9/22 · 仍待 FAA</span></div>
+    <div class="u" style="min-width:auto;padding:10px 16px;text-align:left"><b id="cdLbl" style="font-size:14px;color:#f5b942">計算中…</b><span>NET 9/28 · 仍待 FAA</span></div>
   </div>
   <div class="hgrid">
     <div class="hcell"><div class="hl">堆疊（L2）</div><div class="hv">B21 × S41</div><div class="hs">v3 / Block 3 · Pad 2</div></div>
     <div class="hcell"><div class="hl">助推器目標</div><div class="hv" style="font-size:15px">灣區軟濺落</div><div class="hs">完整著陸點火 · 塔捕非本飛</div></div>
     <div class="hcell"><div class="hl">飛船目標</div><div class="hv" style="font-size:15px;color:#f5b942">首次入軌</div><div class="hs">26× V3 入軌 · 太平洋濺落</div></div>
-    <div class="hcell"><div class="hl">狀態</div><div class="hv" style="color:#f5b942">靜火完成</div><div class="hs">官網 9/22 07:15 CT · 待 FAA 執照</div></div>
+    <div class="hcell"><div class="hl">狀態</div><div class="hv" style="color:#f5b942">NET 9/28</div><div class="hs">9/17 從 9/22 再滑 · 待 FAA 執照</div></div>
   </div>
 </div>
 
 <div class="callout info">
-  <b>編號說明：</b>Flight 14 公開追蹤堆疊為 <b>B21（Super Heavy）+ S41（Starship）</b>（L2：NSF／Wikipedia）。口語勿與 B40×S20 混淆。F13 的 B20／S40 已結案（S40 8/18 拖至聖誕島，史上首次上層級完整回收）。<b>敘事切換：</b>8/4 電話會曾說本月底艦捕；<b>8/20 Musk 改口「幾個月後」</b>——本飛改盯<b>首次入軌 + V3 入軌部署</b>。Falcon 家族 YTD <b>~107</b>（9/13 · L2 Space.com：F9 105＋FH 2）。Q2 訂戶 <b>1,200 萬 L1</b>。
+  <b>編號說明：</b>Flight 14 公開追蹤堆疊為 <b>B21（Super Heavy）+ S41（Starship）</b>（L2：NSF／Wikipedia）。口語勿與 B40×S20 混淆。F13 的 B20／S40 已結案（S40 8/18 拖至聖誕島，史上首次上層級完整回收）。<b>敘事切換：</b>8/4 電話會曾說本月底艦捕；<b>8/20 Musk 改口「幾個月後」</b>——本飛改盯<b>首次入軌 + V3 入軌部署</b>。Falcon 家族 YTD <b>~109</b>（9/20 · L2：9/13 Space.com 107＝F9 105＋FH 2；其後 USSF-259、Starlink 15-27）。Q2 訂戶 <b>1,200 萬 L1</b>。
 </div>
 
 <div class="skpi">
-  <div class="k"><div class="kl">下一重大發射</div><div class="kv" style="color:#f5b942;font-size:18px">F14 9/22</div><div class="kc">官網窗口 · 仍待 FAA</div></div>
+  <div class="k"><div class="kl">下一重大發射</div><div class="kv" style="color:#f5b942;font-size:18px">F14 9/28</div><div class="kc">SpaceX NET · 仍待 FAA</div></div>
   <div class="k"><div class="kl">F14 主目標</div><div class="kv" style="font-size:18px;color:#f5b942">首次入軌</div><div class="kc">26× V3 · 艦捕延後</div></div>
-  <div class="k"><div class="kl">Falcon YTD 2026</div><div class="kv">~107 發</div><div class="kc">F9 105＋FH 2 · as-of 9/13 · L2</div></div>
-  <div class="k"><div class="kl">SPCX 股價</div><div class="kv" style="color:#22c55e">$150.88</div><div class="kc">美 9/16 收 · 高於 IPO $135 · 市值 ~2.0 兆</div></div>
+  <div class="k"><div class="kl">Falcon YTD 2026</div><div class="kv">~109 發</div><div class="kc">F9 107＋FH 2 · as-of 9/20 · L2</div></div>
+  <div class="k"><div class="kl">SPCX 股價</div><div class="kv" style="color:#22c55e">$152.71</div><div class="kc">美 9/18 收 · 盤後 $152.64 · 市值 ~2.01 兆</div></div>
 </div>
 
 <div class="callout risk">
-  <b>投資／執行風險（讀 F14 前必看）：</b>① <b>艦捕已不在本飛</b>——Musk 8/20「probably catch in a few months」；FAA 塔捕安全區審批被指為主因（L2）。② <b>首次入軌仍高風險</b>——軌道插入、~6 圈、26× V3 部署、單機離軌、太平洋再入，任一步失敗都會打臉「熱盾已解決」敘事。③ <b>官網已給 9/22 窗口，但非硬 T-0</b>——仍 pending FAA 執照／天氣／射程，<b>以 spacex.com 為準</b>。④ <b>9/9 鎖倉已發生</b>（~3.19 億股，當日 −3.9% 至 $147.55；9/10 關聯方 ~0.59 億）；下一檔 <b>9/24 ~3.284 億</b>與 F14 窗口接近。⑤ FAA EA／FONSI（9/2）≠ 發射執照——仍待牌照修改。
+  <b>投資／執行風險（讀 F14 前必看）：</b>① <b>艦捕已不在本飛</b>——Musk 8/20「probably catch in a few months」；FAA 塔捕安全區審批被指為主因（L2）。② <b>首次入軌仍高風險</b>——軌道插入、~6 圈、26× V3 部署、單機離軌、太平洋再入，任一步失敗都會打臉「熱盾已解決」敘事。③ <b>9/17 再滑至 NET 9/28</b>——SpaceX 未給公開原因，仍 pending FAA 執照／天氣／射程，<b>以 spacex.com 為準</b>。④ <b>9/9 鎖倉已發生</b>（~3.19 億股，當日 −3.9% 至 $147.55；9/10 關聯方 ~0.59 億）；下一檔 <b>9/24 ~3.284 億</b>現在<b>早於</b> F14（原與 9/22 窗重疊）。9/18 量能 3.4 億股（約 3.8×均量）收 $152.71（−1.36%）。⑤ FAA EA／FONSI（9/2）≠ 發射執照——仍待牌照修改。
 </div>
 
 <!-- ===== F14 VEHICLE CARDS: B21 / S41 ===== -->
@@ -771,7 +776,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
         <tr class="done"><td class="ph">3</td><td><span class="pst">Raptor 3 全套安裝／檢查</span><div class="psd">33 台 · 吸取 F13 著陸點火缺口</div></td><td class="pstt">完成</td></tr>
         <tr class="done"><td class="ph">4</td><td><span class="pst">全時長靜態點火</span><div class="psd">8/28 Pad 2 · 33 機 · SpaceX 官方影片（L1／L2）</div></td><td class="pstt">完成</td></tr>
         <tr class="run"><td class="ph">5</td><td><span class="pst">回 Mega Bay · 飛行準備覆核</span><div class="psd">8/29 滾回 MB-1 · FRR／檢查 · 下一步再上 Pad 堆疊</div></td><td class="pstt">進行中</td></tr>
-        <tr class="todo"><td class="ph">6</td><td><span class="pst">堆疊 · Flight 14 升空</span><div class="psd">官網窗口 9/22 · 仍待 FAA</div></td><td class="pstt">待執行</td></tr>
+        <tr class="todo"><td class="ph">6</td><td><span class="pst">堆疊 · Flight 14 升空</span><div class="psd">SpaceX NET 9/28 · 仍待 FAA</div></td><td class="pstt">待執行</td></tr>
         <tr class="todo"><td class="ph">7</td><td><span class="pst">返回 · 灣區著陸點火</span><div class="psd">目標：完整軟濺落（本飛不塔捕）</div></td><td class="pstt">待執行</td></tr>
       </tbody>
     </table>
@@ -803,7 +808,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
         <tr class="done"><td class="ph">3</td><td><span class="pst">單機靜火（離軌剖面）</span><div class="psd">8/19 Massey’s · 模擬離軌點火 · L2</div></td><td class="pstt">完成</td></tr>
         <tr class="done"><td class="ph">4</td><td><span class="pst">六機 60 秒全時長靜火</span><div class="psd">8/21 · SpaceX 官方確認成功（L1 社媒）· 回 MB-2</div></td><td class="pstt">完成</td></tr>
         <tr class="run"><td class="ph">5</td><td><span class="pst">載荷整合（V3）＋終檢</span><div class="psd">26 顆 Starlink V3 入軌部署（L1 官網）；熱盾／襟翼終檢</div></td><td class="pstt">進行中</td></tr>
-        <tr class="todo"><td class="ph">6</td><td><span class="pst">堆疊 · Flight 14 升空</span><div class="psd">官網窗口 9/22 · 仍待 FAA</div></td><td class="pstt">待執行</td></tr>
+        <tr class="todo"><td class="ph">6</td><td><span class="pst">堆疊 · Flight 14 升空</span><div class="psd">SpaceX NET 9/28 · 仍待 FAA</div></td><td class="pstt">待執行</td></tr>
         <tr class="todo"><td class="ph">7</td><td><span class="pst">入軌 · V3 部署 · 再入濺落</span><div class="psd">艦捕已延後數月；本飛終點＝太平洋濺落（~10h／~6 圈）</div></td><td class="pstt">待執行</td></tr>
       </tbody>
     </table>
@@ -961,7 +966,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
     <tr><td class="metric-row">S41 cryo + 靜火</td><td style="text-align:left"><span class="pos-c">完成</span></td><td style="text-align:left">cryo 6/30；單機 8/19＋<b>六機 60s 8/21</b>（SpaceX 官方）</td></tr>
     <tr><td class="metric-row">艦捕（Mechazilla）</td><td style="text-align:left"><span class="flat">本飛不做</span></td><td style="text-align:left">Musk 8/20：probably a few months；FAA 安全區（L2）</td></tr>
     <tr><td class="metric-row">FAA／空域 TFR</td><td style="text-align:left"><span class="flat">EA／FONSI 已出</span></td><td style="text-align:left">9/2 Final Tiered EA＋FONSI（太平洋備援＋Starbase 再入）；發射執照修改仍待；TFR／NOTAM 發射前數日</td></tr>
-    <tr><td class="metric-row">SpaceX 官網 F14 頁 + T-0</td><td style="text-align:left"><span class="pos-c">官網頁已上</span></td><td style="text-align:left">9/15 公告窗口 <b>9/22 07:15 CT</b>（備援 9/23）；精確 T-0 與 FAA 執照仍待</td></tr>
+    <tr><td class="metric-row">SpaceX 官網 F14 頁 + T-0</td><td style="text-align:left"><span class="flat">NET 再滑</span></td><td style="text-align:left">9/17 X：<b>as early as 9/28</b> pending FAA（原 9/22 07:15 CT 窗已過期）；精確 T-0 仍待</td></tr>
     <tr><td class="metric-row">載荷（V3）確認</td><td style="text-align:left"><span class="pos-c">26 顆入軌</span></td><td style="text-align:left">L1 官網：運營軌道＋revenue V3（非亞軌道演示）</td></tr>
   </tbody>
 </table></div>
@@ -987,7 +992,10 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
   <div class="ev big"><span class="ed">9/9–10</span><span class="et"><b>第三檔鎖倉</b> ~3.19 億股解禁 · SPCX 9/9 收 <b>$147.55</b>（−3.9%）；9/10 關聯方 ~0.59 億（L2 Motley Fool）</span></div>
   <div class="ev big"><span class="ed">9/15</span><span class="et">SpaceX 官網：F14 窗口改 <b>9/22 07:15 CT</b>（原 NET 9/15 滑移）· 26× V3 · ~6 圈 · 太平洋濺落</span></div>
   <div class="ev big"><span class="ed">9/16</span><span class="et">SPCX 收 <b>$150.88</b>（+5.15% vs $143.49）· 市值 ~2.0 兆 · 重回 $150 上方</span></div>
-  <div class="ev big"><span class="ed">NET 9/22</span><span class="et"><b>Flight 14</b> · B21×S41 · <b>首次入軌 + 26× V3</b> — 官網窗口已給；艦捕延後；仍待 FAA</span></div>
+  <div class="ev big"><span class="ed">9/16–20</span><span class="et">Falcon：USSF-259 升空（Vandenberg）· Starlink 15-27（9/19 PDT／9/20 01:47 UTC，B1093 第 17 次、OCISLY 回收）· 家族 YTD ~109</span></div>
+  <div class="ev big"><span class="ed">9/17</span><span class="et">SpaceX：F14 改盯 <b>NET 9/28</b> pending FAA（原 9/22 再滑 6 日；未給公開原因）· SPCX 收 $154.81（+2.6%）</span></div>
+  <div class="ev big"><span class="ed">9/18</span><span class="et">SPCX 收 <b>$152.71</b>（−1.36%；量 3.35 億≈3.8×均量）· 盤後 $152.64 · 市值 ~2.01 兆</span></div>
+  <div class="ev big"><span class="ed">NET 9/28</span><span class="et"><b>Flight 14</b> · B21×S41 · <b>首次入軌 + 26× V3</b> — SpaceX NET；艦捕延後；仍待 FAA</span></div>
   <div class="ev"><span class="ed">9/24</span><span class="et">下一檔鎖倉約 3.284 億股（其後 10/9、10/24；Q3 後大檔；180 日 12/8）</span></div>
   <div class="ev"><span class="ed">F14 後</span><span class="et">若入軌成功 → 月頻＋後續艦捕；若否 → 再試軌道 · 月頻目標不變（Shotwell／Isaacman）</span></div>
 </div>
@@ -1007,7 +1015,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 <!-- ===== Calendar ===== -->
 <h2>🗓️ 近期日曆（發射／財報／監管）</h2>
 <div class="cal">
-  <div class="crow"><div class="cd">持續</div><div class="ce">Falcon 9 高頻發射 · YTD ~107 ｜ B21／S41 靜火已完成、待堆疊</div><div class="cs" style="color:#22c55e">運營中</div></div>
+  <div class="crow"><div class="cd">持續</div><div class="ce">Falcon 9 高頻發射 · YTD ~109 ｜ B21／S41 靜火已完成、待堆疊</div><div class="cs" style="color:#22c55e">運營中</div></div>
   <div class="crow"><div class="cd">7/25 澳門</div><div class="ce"><b>F13 成功</b> · S40 其後完整回收至聖誕島</div><div class="cs" style="color:#22c55e">已發生</div></div>
   <div class="crow"><div class="cd">8/4 美盤後</div><div class="ce"><b>SPCX Q2 首份公開季報</b> · 營收 78 億超 · CapEx 184 億 · 訂戶 12M</div><div class="cs" style="color:#22c55e">已發生</div></div>
   <div class="crow"><div class="cd">8/21–28</div><div class="ce">S41 六機靜火 · B21 33 機靜火 — F14 硬體門檻過關</div><div class="cs" style="color:#22c55e">已發生</div></div>
@@ -1015,18 +1023,20 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
   <div class="crow"><div class="cd">9/2</div><div class="ce">FAA Final Tiered EA／FONSI（F14 再入環境路徑）</div><div class="cs" style="color:#22c55e">已發生</div></div>
   <div class="crow"><div class="cd">9/3</div><div class="ce">Tesla Cybercab 上路（交叉情緒；TSLA 翌日大跌）</div><div class="cs" style="color:#22c55e">已發生</div></div>
   <div class="crow"><div class="cd">9/9–10</div><div class="ce">第三檔鎖倉已解禁 · 9/9 收 $147.55（−3.9%）</div><div class="cs" style="color:#22c55e">已發生</div></div>
-  <div class="crow"><div class="cd">9/22</div><div class="ce"><b>Starship Flight 14</b> · 官網窗口 07:15 CT · 首次入軌 + 26× V3</div><div class="cs" style="color:#f5b942">官網窗口</div></div>
-  <div class="crow"><div class="cd">9/24</div><div class="ce">下一檔鎖倉 ~3.284 億股</div><div class="cs" style="color:#ef4444">供給</div></div>
+  <div class="crow"><div class="cd">9/17</div><div class="ce">SpaceX：F14 改盯 <b>NET 9/28</b>（原 9/22 再滑）</div><div class="cs" style="color:#22c55e">已發生</div></div>
+  <div class="crow"><div class="cd">9/24</div><div class="ce">下一檔鎖倉 ~3.284 億股（現早於 F14）</div><div class="cs" style="color:#ef4444">供給</div></div>
+  <div class="crow"><div class="cd">9/28</div><div class="ce"><b>Starship Flight 14</b> · SpaceX NET · 首次入軌 + 26× V3 · 仍待 FAA</div><div class="cs" style="color:#f5b942">NET</div></div>
   <div class="crow"><div class="cd">Q3 2026</div><div class="ce">Cursor ~$60B 收購預計交割 · Nvidia Vera Rubin 算力擴建</div><div class="cs" style="color:#5b8def">觀察</div></div>
   <div class="crow"><div class="cd">2026/11–12</div><div class="ce">火星轉移窗口敘事 — 高度不確定</div><div class="cs" style="color:#94a3b8">遠景</div></div>
 </div>
 
 <div class="callout">
-  <b>怎麼用這頁：</b>① 頂部倒數與 KPI 盯 F14（<b>首軌 + V3</b>，不是艦捕）；② B21／S41 靜火已打勾，下一步堆疊／官網 T-0；③ 任務剖面理解「入軌 vs 亞軌道」；④ 檢查清單；⑤ F13／S40 回收可折疊；⑥ 新聞流抓催化與 9/24 下一檔鎖倉。發射以 SpaceX 官網為準。
+  <b>怎麼用這頁：</b>① 頂部倒數與 KPI 盯 F14（<b>首軌 + V3</b>，不是艦捕；現 NET <b>9/28</b>）；② B21／S41 靜火已打勾，下一步堆疊／官網 T-0；③ 任務剖面理解「入軌 vs 亞軌道」；④ 檢查清單；⑤ F13／S40 回收可折疊；⑥ 新聞流抓催化與 <b>9/24 鎖倉（已早於 F14）</b>。發射以 SpaceX 官網為準。
 </div>
 
 <div class="changelog">
   <b>本頁變更</b>
+  <div class="cl-item"><span class="cl-d">2026-09-20</span> SPCX 9/18 <b>$152.71</b>（盤後 $152.64 · ~2.01 兆）；F14 改盯 NET <b>9/28</b>；9/24 鎖倉提前於 F14；Falcon YTD ~109（9/20 Starlink 15-27）；9/9 鎖倉 −3.9% 後反彈</div>
   <div class="cl-item"><span class="cl-d">2026-09-17</span> SPCX 9/16 <b>$150.88</b>（~2.0 兆）；F14 官網窗口 <b>9/22</b>（原 NET 9/15 滑）；9/9 鎖倉 −3.9%；Falcon YTD ~107（9/13）；26× V3；下一檔 9/24</div>
   <div class="cl-item"><span class="cl-d">2026-09-06</span> SPCX 9/4 <b>$147.95</b>；FAA 9/2 <b>EA／FONSI</b>（再入環境）；F14 仍 NET 9/15、艦捕延後；Falcon YTD ~104（9/2）；9/9 鎖倉逼近；Cybercab 交叉情緒</div>
   <div class="cl-item"><span class="cl-d">2026-09-01</span> <b>F14 改寫為首軌</b>：艦捕延後數月（Musk 8/20）；NET 9/15（FCC）；S41／B21 靜火完成；Louisiana $1000 億；SPCX 8/31 <b>$143.69</b>；Falcon YTD ~104；9/9 鎖倉</div>
@@ -1041,7 +1051,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 <footer>
   <b>資料來源．</b><span class="ly L1">L1</span> <a href="https://www.spacex.com/launches/starship-flight-13" target="_blank" rel="noopener">SpaceX F13</a>、<a href="https://ir.spacex.com/" target="_blank" rel="noopener">Q2'26 IR</a>、Musk 8/4 電話會；
   <span class="ly L2">L2</span> NSF／Spaceflight Now／nextspaceflight、CNBC／Reuters。
-  F14 硬件步驟多為社區彙整；<b>窗口／載荷以 SpaceX 官網 L1 為準</b>（9/22 · 26× V3）。<b>免責：</b>個人研究筆記，非投資建議。更新 2026-09-17。
+  F14 硬件步驟多為社區彙整；<b>窗口／載荷以 SpaceX 官網／X L1 為準</b>（NET 9/28 · 26× V3）。<b>免責：</b>個人研究筆記，非投資建議。更新 2026-09-20。
 </footer>
 </div><!-- /viewN -->
 
@@ -1057,7 +1067,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 <div class="expect">
   <div class="ehead"><div class="t">⏭️ Q3 2026 預期 vs 實際</div><div class="d" id="esumT"></div></div>
   <div class="egrid" id="egridT"></div>
-  <p class="note">灰卡＝街共識尚未公佈（大字為<b>Q3 預期值</b>）；財報後自動變<span class="hit">綠＝超預期</span>／<span class="miss">紅＝遜預期</span>。<b>Q3 預覽（共識 2026-09-17）：</b>交付 Visible Alpha ~<b>45.6 萬</b>、營收 Yahoo/LSEG ~<b>275.3 億</b>、adj EPS ~<b>$0.45</b>；儲能／毛利率尚無可靠 Q3 街共識故暫略。<b>Q2 回顧：</b>交付 480,126 大超、營收 282.4 億超、adj EPS $0.33 遜、FCF −10.9 億。預計交付早 10 月、財報約 10/28。</p>
+  <p class="note">灰卡＝街共識尚未公佈（大字為<b>Q3 預期值</b>）；財報後自動變<span class="hit">綠＝超預期</span>／<span class="miss">紅＝遜預期</span>。<b>Q3 預覽（共識 2026-09-20）：</b>交付 Visible Alpha ~<b>45.6 萬</b>（GS 43.5／Barclays 47.5／Bloomberg ~46.6）；營收 Yahoo/LSEG ~<b>275.3 億</b>（未見明確移動）；adj EPS MarketWatch/Yahoo ~<b>$0.46</b>（30 日前約 $0.45）。儲能／毛利率尚無可靠 Q3 街共識故暫略。<b>Q2 回顧：</b>交付 480,126 大超、營收 282.4 億超、adj EPS $0.33 遜、FCF −10.9 億。預計交付早 10 月、財報約 10/28。</p>
 </div>
 
 <div class="callout">
@@ -1163,15 +1173,15 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 <div class="scroll"><table>
   <thead><tr><th>業務</th><th>定位</th><th>最新進度</th><th>量產/放量時點</th></tr></thead>
   <tbody>
-    <tr><td class="metric-row">Cybercab</td><td style="text-align:left">無方向盤 robotaxi 專用車、unboxed 製程</td><td style="text-align:left"><b>9/3 Austin 已上路載客</b>；NHTSA AQ26002 → <b>9/10 Special Order</b>（回應至 9/30）；台數／付費未官宣</td><td>2026 H2 爬坡</td></tr>
+    <tr><td class="metric-row">Cybercab</td><td style="text-align:left">無方向盤 robotaxi 專用車、unboxed 製程</td><td style="text-align:left"><b>9/3 Austin 已上路載客</b>；NHTSA AQ26002 → <b>9/10 Special Order</b>（回應至 9/30，截至 9/20 未見公開回覆）；德州名冊 <b>58 台</b>（9/18）</td><td>2026 H2 爬坡</td></tr>
     <tr><td class="metric-row">Optimus 人形機器人</td><td style="text-align:left">把 AI 裝進「手腳」；Musk 視為長期最大價值</td><td style="text-align:left">Fremont <b>一代線安裝中</b>；JPM 8/19：Gen 3 定稿、H2'26 Academy、對外最早 <b>H2'27</b></td><td>2026 內部 / 2027 對外</td></tr>
-    <tr><td class="metric-row">Robotaxi 服務</td><td style="text-align:left">FSD 無監督載客</td><td style="text-align:left">7 大都會；<b>內華達 5,000 台許可</b>（8/20）；車隊仍遠低 Waymo；FSD <b>v14.3.9／ACE</b> 開推、v15 預告；宣稱 38 萬哩無重大事故（L2）</td><td>持續擴城／車隊</td></tr>
+    <tr><td class="metric-row">Robotaxi 服務</td><td style="text-align:left">FSD 無監督載客</td><td style="text-align:left">7 大都會；<b>內華達 5,000 台許可</b>（8/20）；德州 Robotaxi 授權合計 448（Cybercab 58＋Model Y 390）；FSD <b>v14.3.10／ACE</b> 開推、v15 預告</td><td>持續擴城／車隊</td></tr>
     <tr><td class="metric-row">Tesla Semi / Megapack 3</td><td style="text-align:left">電動卡車 / 新一代儲能</td><td style="text-align:left">Q2：仍按 2026 量產時程；休士頓 Megafactory 推進</td><td>2026 量產</td></tr>
     <tr><td class="metric-row">AI5 晶片</td><td style="text-align:left">邊緣推理（降 Nvidia 依賴）</td><td style="text-align:left">tape-out 完成；Musk：已訂 development fab 設備；與 SpaceX Terafab 敘事綁定</td><td>2026–27</td></tr>
   </tbody>
 </table></div>
 <div class="take">
-  <b>解讀．</b>Q2 後選擇權「進度條」前移：Cybercab <b>9/3 已上路</b>、NHTSA 自 AQ26002 <b>升級 Special Order</b>（9/30 回應）、FSD <b>v14.3.9／ACE</b>、Robotaxi <b>7 城＋內華達 5,000 許可</b>、Optimus <b>裝線</b>（JPM H2'27）、FSD 訂閱 <b>148 萬</b>。仍接近零營收。下一關：Special Order、付費／擴隊、內華達落地。
+  <b>解讀．</b>Q2 後選擇權「進度條」前移：Cybercab <b>9/3 已上路</b>、德州名冊 <b>58</b>、NHTSA <b>Special Order</b> 仍待 9/30、FSD <b>v14.3.10／ACE</b>、Robotaxi <b>7 城＋內華達 5,000 許可</b>、Optimus <b>裝線</b>（JPM H2'27）、FSD 訂閱 <b>148 萬</b>。仍接近零營收。下一關：Special Order 回覆、付費／擴隊、內華達落地。
 </div>
 
 <h3>1.6 現金流</h3>
@@ -1181,7 +1191,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 </div>
 
 <footer>
-  <b>Tesla 資料來源．</b><span class="ly L1">L1</span> 官方 8-K／IR（Q3 2024–Q2 2026）＋ Q2'26 Update PDF；共識 LSEG／Zacks／Bloomberg；新業務進度為 L2 媒體彙整。<b>免責：</b>個人研究筆記，非投資建議。更新 2026-09-17。
+  <b>Tesla 資料來源．</b><span class="ly L1">L1</span> 官方 8-K／IR（Q3 2024–Q2 2026）＋ Q2'26 Update PDF；共識 LSEG／Zacks／Bloomberg；新業務進度為 L2 媒體彙整。<b>免責：</b>個人研究筆記，非投資建議。更新 2026-09-20。
 </footer>
 
 </div><!-- /viewT -->
@@ -1198,7 +1208,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 <div class="expect">
   <div class="ehead"><div class="t">⏭️ Q3 2026 預期 vs 實際</div><div class="d" id="esumS"></div></div>
   <div class="egrid" id="egridS"></div>
-  <p class="note">灰卡＝街共識尚未公佈（大字為<b>Q3 預期值</b>）。<b>Q3 預覽（共識 2026-09-17）：</b>總營收 MarketScreener/Profit ~<b>128.4 億</b>（約 12 分析師）；CapEx 採管理層指引 <b>≈184 億</b>（Q3/Q4 與 Q2 相若）。發射／訂戶／分部營收／AI 虧損尚無可靠公開 Q3 街共識故暫略。<b>Q2 回顧：</b>營收 78.1 億大超、訂戶 1,200 萬、CapEx 183.7 億遠超共識。預計財報約 11/3。</p>
+  <p class="note">灰卡＝街共識尚未公佈（大字為<b>Q3 預期值</b>）。<b>Q3 預覽（共識 2026-09-20）：</b>總營收維持 MarketScreener/Profit ~<b>128.4 億</b>（約 12 分析師；本週公開頁未能獨立核實移動，故不改數字）；CapEx 採管理層指引 <b>≈184 億</b>（Q3/Q4 與 Q2 相若）。發射／訂戶／分部營收／AI 虧損尚無可靠公開 Q3 街共識故暫略。<b>Q2 回顧：</b>營收 78.1 億大超、訂戶 1,200 萬、CapEx 183.7 億遠超共識。預計財報約 11/3。</p>
 </div>
 
 <div class="callout">
@@ -1208,7 +1218,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
   <div class="kpi"><div class="lbl">Q2 2026 總營收 <span class="ly L1">L1</span></div><div class="val">78.1 億美元</div><div class="chg pos">+92% YoY · 大超共識 ~69</div></div>
   <div class="kpi"><div class="lbl">Starlink 訂戶 <span class="ly L1">L1</span></div><div class="val">1,200 萬</div><div class="chg pos">Q2 末 · +170 萬 QoQ · ARPU $66</div></div>
   <div class="kpi"><div class="lbl">Q2 AI 營業虧損 <span class="ly L1">L1</span></div><div class="val">−12.6 億美元</div><div class="chg pos">vs Q1 −24.7 · 收斂 49%</div></div>
-  <div class="kpi"><div class="lbl">SPCX 股價 <span class="ly L2">L2</span></div><div class="val" style="color:#22c55e">$150.88</div><div class="chg pos">9/16 收 · 高於 IPO $135 · 市值 ~2.0 兆 · 低 $104.83</div></div>
+  <div class="kpi"><div class="lbl">SPCX 股價 <span class="ly L2">L2</span></div><div class="val" style="color:#22c55e">$152.71</div><div class="chg pos">9/18 收 · 盤後 $152.64 · 市值 ~2.01 兆 · 低 $104.83</div></div>
 </div>
 <div class="callout warn" style="margin-top:12px">
   <b>讀表規則：</b><span class="ly L1">L1</span> 可當事實；<span class="ly L2">L2</span> 有出處但可能過期；<span class="ly L3">L3</span> 是模型，<b>合約面額 ≠ 當季認列營收</b>。Colossus 滿載 ARR 與 Q2 實際入帳見下方「合約台帳」。
@@ -1229,10 +1239,10 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 </table></div>
 <p class="note">＊估算來源：Sacra、Payload、Morgan Stanley 等上市前研究；實際為 SpaceX S-1（2026/5/20）。2026 為分析師區間，離散極大（Morningstar 368 億至保守 238 億美元）。</p>
 <div class="callout warn">
-  <b>Q2 2026 已公佈（L1 IR · 美 8/4 盤後）：</b>總營收 <b>78.14 億</b>（+92% YoY）vs 共識 ~69 億；Space 9.62／Connectivity <b>42.91</b>（+66% YoY，營業利潤 16.56）／AI <b>25.61</b>（+247% YoY，營業虧 −12.57，Adj EBITDA 轉正 +11.5）。淨虧 <b>5.41 億</b>（EPS −$0.09 優於 −$0.26）；Adj EBITDA <b>35.4 億</b>（+191%）。<b>CapEx 183.7 億</b>（AI 158.3）為市場焦點——CFO：AI 回本期 &lt;1 年、下兩季 capex 類似；現金及約當～<b>935–1,000 億</b>（含 IPO）。訂戶 <b>12.0M</b> L1 季末（+1.7M QoQ）、ARPU $66 持平。Starshield 多年約 &gt;$60 億。Musk：YE26 衝 <b>$100B ARR</b> 節奏；Nvidia 獨家算力＋軌道 Starmind。<b>股價（更新）：</b>8/7 $133.11 → 8/12 $146.15（+9.7%）→ 8/20 第二檔鎖倉收 $134（−4%）→ 8/25 Louisiana 宣布 → 8/31 收 <b>$143.69</b>（市值約 <b>1.86 兆</b> L2），站穩 IPO $135 上方。52 週低 $104.83（8/3）。F14 艦捕已延後，改盯 <b>9/22 官網窗口</b>首軌（26× V3）。9/9 鎖倉已發生（−3.9%）；下一檔 9/24 ~3.284 億股。
+  <b>Q2 2026 已公佈（L1 IR · 美 8/4 盤後）：</b>總營收 <b>78.14 億</b>（+92% YoY）vs 共識 ~69 億；Space 9.62／Connectivity <b>42.91</b>（+66% YoY，營業利潤 16.56）／AI <b>25.61</b>（+247% YoY，營業虧 −12.57，Adj EBITDA 轉正 +11.5）。淨虧 <b>5.41 億</b>（EPS −$0.09 優於 −$0.26）；Adj EBITDA <b>35.4 億</b>（+191%）。<b>CapEx 183.7 億</b>（AI 158.3）為市場焦點——CFO：AI 回本期 &lt;1 年、下兩季 capex 類似；現金及約當～<b>935–1,000 億</b>（含 IPO）。訂戶 <b>12.0M</b> L1 季末（+1.7M QoQ）、ARPU $66 持平。Starshield 多年約 &gt;$60 億。Musk：YE26 衝 <b>$100B ARR</b> 節奏；Nvidia 獨家算力＋軌道 Starmind。<b>股價（更新）：</b>8/7 $133.11 → 8/12 $146.15（+9.7%）→ 8/20 第二檔鎖倉收 $134（−4%）→ 8/25 Louisiana 宣布 → 8/31 收 <b>$143.69</b>（市值約 <b>1.86 兆</b> L2），站穩 IPO $135 上方。52 週低 $104.83（8/3）。F14 艦捕已延後，改盯 <b>NET 9/28</b>首軌（26× V3；9/17 從 9/22 再滑）。9/9 鎖倉已發生（−3.9%）；下一檔 <b>9/24 ~3.284 億股現早於 F14</b>。
 </div>
 <div class="take">
-  <b>連續解讀．</b>首份公開季報驗證「驚喜」：營收／訂戶／AI 虧損收斂皆優於共識；市場用 <b>CapEx 183 億</b>重新定價「成長代價」。8/6 首批鎖倉賣壓落空；8/20 第二檔仍砸約 4%。8 月股價從低點修復至 IPO 上方（8/31 $143.69）。催化切換：<b>F14 首軌（官網 9/22）</b>取代艦捕；9/9 鎖倉已消化（−3.9% 後反彈）；Louisiana $1000 億是遠期產能敘事（2029 首射）。<u>營收故事贏了；資本開支、9/24 鎖倉與 F14 入軌成敗是定價核心。</u>
+  <b>連續解讀．</b>首份公開季報驗證「驚喜」：營收／訂戶／AI 虧損收斂皆優於共識；市場用 <b>CapEx 183 億</b>重新定價「成長代價」。8/6 首批鎖倉賣壓落空；8/20 第二檔仍砸約 4%。8 月股價從低點修復至 IPO 上方（8/31 $143.69）。催化切換：<b>F14 首軌（NET 9/28）</b>取代艦捕；9/9 鎖倉已消化（−3.9% 後反彈至 $150+）；<b>9/24 鎖倉現早於 F14</b>；Louisiana $1000 億是遠期產能敘事（2029 首射）。<u>營收故事贏了；資本開支、9/24 鎖倉與 F14 入軌成敗是定價核心。</u>
 </div>
 
 <h3>2.1 營收與業務分部（年度折線，億美元）</h3>
@@ -1262,10 +1272,10 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
     <tr><td class="sub">Starshield 政府／軍用 <span class="ly L1">L1</span></td><td>估 ~10–12</td><td>多年約 &gt;<b>$60 億</b>（兩大 Space Force）</td><td>新國防訂單</td></tr>
     <tr><td class="sub">直連手機 D2C <span class="ly L2">L2</span></td><td>起步</td><td>EchoStar 65MHz 過 FCC；SoftBank／DoCoMo 等</td><td>2027 獨立 Mobile</td></tr>
     <tr><td class="sub">終端硬體銷售 <span class="ly L3">L3</span></td><td>估 ~6–10</td><td>碟／Mini；硬體月租試點</td><td>硬體毛利</td></tr>
-    <tr class="biz" style="--bc:#5b8def"><td>🚀 ② Space／發射服務 <span class="ly L1">L1</span></td><td>營收 41 · 165 發</td><td><b>9.62 億</b>（+29% YoY）· Q2 38 發（客 10／內 28）· H1 78 發 · YTD ~107</td><td>對外單價 · F14 首軌</td></tr>
+    <tr class="biz" style="--bc:#5b8def"><td>🚀 ② Space／發射服務 <span class="ly L1">L1</span></td><td>營收 41 · 165 發</td><td><b>9.62 億</b>（+29% YoY）· Q2 38 發（客 10／內 28）· H1 78 發 · YTD ~109</td><td>對外單價 · F14 首軌</td></tr>
     <tr><td class="sub">發射服務收入 <span class="ly L1">L1</span></td><td>—</td><td>6.48 億（客戶發射）</td><td>市佔 vs New Glenn</td></tr>
     <tr><td class="sub">發射與開發收入 <span class="ly L1">L1</span></td><td>—</td><td>3.14 億</td><td>HLS 里程碑</td></tr>
-    <tr><td class="sub">Starship（研發中）</td><td>0</td><td><b>F13 成功</b>；F14 官網 <b>9/22 首軌</b>；艦捕延後數月</td><td>入軌＋V3</td></tr>
+    <tr><td class="sub">Starship（研發中）</td><td>0</td><td><b>F13 成功</b>；F14 SpaceX NET <b>9/28 首軌</b>；艦捕延後數月</td><td>入軌＋V3</td></tr>
     <tr><td class="sub">內部自用（部署 Starlink）</td><td>—</td><td>Q2 內部 28 發／397t</td><td>V3 上 Starship</td></tr>
     <tr class="biz" style="--bc:#f5b942"><td>🤖 ③ AI 段 xAI／Grok／X <span class="ly L1">L1</span></td><td>營收 32 · 營業虧損 −64</td><td><b>25.61 億</b>（+247% YoY）· 營業虧 <b>−12.57</b>（收斂 49%）· Adj EBITDA <b>+11.5</b></td><td>Cursor 交割 · 算力回報</td></tr>
     <tr><td class="sub">AI 方案＋基建租賃 <span class="ly L1">L1</span></td><td>0</td><td><b>21.94 億</b>（雲服務協議貢獻增量 ~16 億）</td><td>Google 10 月全額</td></tr>
@@ -1370,7 +1380,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
   <div class="chartbox"><h4>年度發射次數 — 連 6 年破紀錄</h4><div class="chart sm"><canvas id="spxLaunch"></canvas></div></div>
 </div>
 <div class="take">
-  <b>連續解讀．</b>訂戶 <span class="ly L1">L1</span>：1M（'22）→2.3M→4.4M→8.9M（'25 底）→10.3M（Q1'26）→<b>12.0M（Q2'26 末）</b>，+170 萬 QoQ、翻倍 YoY，跨 167 國。ARPU 持平 Q1/Q2 <b>$66</b>（2023 $99 → 2025 $81）。企業+政府營收 Q2 暴增 108% YoY 至 18.1 億——不只靠衝量。H1 發射 78 發；Falcon 家族 YTD <b>~104</b>（8/30 · L2），近 3/4 自用部署。Musk 8/12：行動／D2C 用戶口徑 <b>2,200 萬</b>（≠ 12M 固定寬頻）。
+  <b>連續解讀．</b>訂戶 <span class="ly L1">L1</span>：1M（'22）→2.3M→4.4M→8.9M（'25 底）→10.3M（Q1'26）→<b>12.0M（Q2'26 末）</b>，+170 萬 QoQ、翻倍 YoY，跨 167 國。ARPU 持平 Q1/Q2 <b>$66</b>（2023 $99 → 2025 $81）。企業+政府營收 Q2 暴增 108% YoY 至 18.1 億——不只靠衝量。H1 發射 78 發；Falcon 家族 YTD <b>~109</b>（9/20 · L2），近 3/4 自用部署。Musk 8/12：行動／D2C 用戶口徑 <b>2,200 萬</b>（≠ 12M 固定寬頻）。
 </div>
 
 <h3>2.4 AI 段細分：xAI / Grok / X</h3>
@@ -1411,11 +1421,12 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
   </div>
 </div>
 <div class="take">
-  <b>連續解讀．</b>估值階梯：IPO ~1.75 兆（$135）→ 高點 ~2.2 兆（$226）→ 8/3 低 $104.83 → 8/7 $133.11 → 8/17 高 $146.23 → 8/31 $143.69 → 9/9 鎖倉 $147.55（−3.9%）→ <b>9/16 收 $150.88（市值約 2.0 兆，L2）</b>。須認清：(1) SpaceX-xAI-X 綜合體；(2) Q2 仍 GAAP 淨虧 5.4 億；(3) 雙重股權；(4) <b>9/24 下一檔鎖倉</b>；(5) <b>AI CapEx 183 億／季仍是基本面定價核心</b>；(6) F14 9/22 首軌成敗會放大波動。
+  <b>連續解讀．</b>估值階梯：IPO ~1.75 兆（$135）→ 高點 ~2.2 兆（$226）→ 8/3 低 $104.83 → 8/7 $133.11 → 8/17 高 $146.23 → 8/31 $143.69 → 9/9 鎖倉 $147.55（−3.9%）→ 9/16 $150.88 → <b>9/18 收 $152.71（市值約 2.01 兆，L2；盤後 $152.64）</b>。須認清：(1) SpaceX-xAI-X 綜合體；(2) Q2 仍 GAAP 淨虧 5.4 億；(3) 雙重股權；(4) <b>9/24 下一檔鎖倉（現早於 F14）</b>；(5) <b>AI CapEx 183 億／季仍是基本面定價核心</b>；(6) F14 NET 9/28 首軌成敗會放大波動。
 </div>
 
 <div class="changelog">
   <b>變更日誌</b>
+  <div class="cl-item"><span class="cl-d">2026-09-20</span> 股價 9/18 <b>$152.71</b>（盤後 $152.64 · 市值 ~2.01 兆）；F14 NET 9/28；Falcon YTD ~109；9/24 鎖倉提前於 F14</div>
   <div class="cl-item"><span class="cl-d">2026-09-17</span> 股價 9/16 <b>$150.88</b>（市值 ~2.0 兆）；9/9 鎖倉 −3.9%；F14 官網 9/22；Falcon YTD ~107；下一檔 9/24</div>
   <div class="cl-item"><span class="cl-d">2026-09-06</span> 股價 9/4 <b>$147.95</b>（市值 ~1.92 兆）；FAA EA／FONSI 9/2；F14 仍 NET 9/15；9/9 鎖倉；Falcon YTD ~104</div>
   <div class="cl-item"><span class="cl-d">2026-09-01</span> 股價 8/31 <b>$143.69</b>（市值 ~1.86 兆）；Louisiana $1000 億；F14 改首軌 NET 9/15；9/9 鎖倉；Falcon YTD ~104</div>
@@ -1434,7 +1445,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 </div>
 
 <footer>
-  <b>SpaceX 資料來源．</b><span class="ly L1">L1</span> 2026/5/20 S-1、Q2'26 IR PDF（8/4）、SpaceX IR／Yahoo 股價；<span class="ly L2">L2</span> CNBC／Reuters／WSJ、NSF／Spaceflight Now；<span class="ly L3">L3</span> 單位經濟敏感度。 <b>免責：</b>個人研究筆記，非投資建議。更新 2026-09-17。
+  <b>SpaceX 資料來源．</b><span class="ly L1">L1</span> 2026/5/20 S-1、Q2'26 IR PDF（8/4）、SpaceX IR／Yahoo 股價；<span class="ly L2">L2</span> CNBC／Reuters／WSJ、NSF／Spaceflight Now；<span class="ly L3">L3</span> 單位經濟敏感度。 <b>免責：</b>個人研究筆記，非投資建議。更新 2026-09-20。
 </footer>
 
 <script>
@@ -1592,7 +1603,7 @@ function initChartsS(){
 
 <div class="callout">
   <b>怎麼用：</b>卡片右上可切 <b>月／季／年</b>。<span class="ly L1">L1</span>：S-1／8-K／Q2'26 IR；較早季度序列多為 <span class="ly L3">L3</span>。<b>Fundamentals 更新需人工勾稽官方文件</b>。<br>
-  <span class="note">＊更新至 2026-09-17（澳門時間）。Tesla Q2 與 SpaceX Q2 均已 L1 入帳；9/3 Cybercab 已發生；NHTSA Special Order（9/10）；F14 官網窗口 <b>9/22 首軌</b>（艦捕延後；原 NET 9/15 滑）；SPCX 9/16 收 $150.88；TSLA 9/16 收 $358.08。請當趨勢框架。</span>
+  <span class="note">＊更新至 2026-09-20（澳門時間）。Tesla Q2 與 SpaceX Q2 均已 L1 入帳；9/3 Cybercab 已發生；NHTSA Special Order 仍待 9/30 回應；F14 SpaceX NET <b>9/28 首軌</b>（9/17 從 9/22 再滑；艦捕延後）；SPCX 美 9/18 收 $152.71；TSLA 美 9/18 收 $364.27。請當趨勢框架。</span>
 </div>
 
 <h2>💰 SpaceX 財務匯總</h2>
@@ -1606,7 +1617,7 @@ function initChartsS(){
 <div class="grid" id="cGroupTesla"></div>
 
 <footer>
-  <b>資料來源．</b><span class="ly L1">L1</span> Tesla 8-K、SpaceX S-1／Q2'26 IR；<span class="ly L2">L2</span> CNBC／Reuters、NSF；<span class="ly L3">L3</span> 較早季度序列。<b>免責：</b>個人研究筆記，非投資建議。更新 2026-09-17。
+  <b>資料來源．</b><span class="ly L1">L1</span> Tesla 8-K、SpaceX S-1／Q2'26 IR；<span class="ly L2">L2</span> CNBC／Reuters、NSF；<span class="ly L3">L3</span> 較早季度序列。<b>免責：</b>個人研究筆記，非投資建議。更新 2026-09-20。
 </footer>
 
 <script>
@@ -1643,7 +1654,7 @@ var C_METRICS=[
   // ===== 🚀 SpaceX 營運指標 =====  (相關聯指標左右成對)
   // 列1：每月發射 | Starlink 每月訂戶
   {id:'spx_launch',group:'SpaceX',name:'SpaceX 發射次數',unit:'次',dec:0,color:'#5b8def',gran:'m',agg:'sum',
-   note:'【L1】H1\'26 共 78 發（Q1 40＋Q2 38）。Falcon 家族 YTD ~107 as-of 9/13（L2 Space.com：F9 105＋FH 2）。2024 134、2025 165。近 3/4 自用 Starlink。',
+   note:'【L1】H1\'26 共 78 發（Q1 40＋Q2 38）。Falcon 家族 YTD ~109 as-of 9/20（L2：9/13 Space.com 107＝F9 105＋FH 2；其後 USSF-259、Starlink 15-27）。2024 134、2025 165。近 3/4 自用 Starlink。',
    data:[['24/01',9],['24/02',10],['24/03',13],['24/04',11],['24/05',12],['24/06',13],['24/07',12],['24/08',9],['24/09',14],['24/10',11],['24/11',10],['24/12',10],['25/01',12],['25/02',11],['25/03',13],['25/04',14],['25/05',13],['25/06',14],['25/07',15],['25/08',13],['25/09',14],['25/10',15],['25/11',15],['25/12',16],['26/01',12],['26/02',11],['26/03',17],['26/04',12],['26/05',13],['26/06',13],['26/07',14],['26/08',12]]},
   {id:'spx_starlink',group:'SpaceX',name:'Starlink 訂戶',unit:'萬戶',dec:0,color:'#a855f7',gran:'m',agg:'last',
    note:'【L1】YE25 890萬、Q1\'26 1030萬、Q2\'26 末 <b>1200萬</b>（+170萬 QoQ）。ARPU Q1/Q2 $66。2026/5 漲價最高 $10/月。',
@@ -1882,8 +1893,13 @@ function showView(v){
 }
 /* ===== VIEW N — Starship countdown + news ===== */
 var NEWS_N=[
-  {d:'2026-09-17',t:'SPCX 美 9/16 收 $150.88（+5.15%）· 重回 $150；F14 官網盯 9/22',b:'前收 9/15 $143.49；開 $144.88、高 $153.01、低 $144.36。市值約 2.0 兆（L2）。9/9 鎖倉 −3.9% 後反彈。下一催化：F14 9/22 首軌、9/24 ~3.284 億股鎖倉。9/17 美股休市。',tags:['biz','imp'],src:'exa / MarketBeat / Motley Fool L2'},
-  {d:'2026-09-15',t:'SpaceX 官網：Flight 14 窗口 9/22 07:15 CT（原 NET 9/15 滑移）',b:'75 分鐘窗口；備援 9/23。首次入軌＋26× Starlink V3 運營部署、~6 圈／~10 小時、太平洋智利以西濺落；助推器灣區濺落；艦捕不在本飛。仍 pending FAA 執照。CFO 9/10：revenue-generating flight。',tags:['ss','imp'],src:'SpaceX.com / Space.com L1–L2'},
+  {d:'2026-09-20',t:'Falcon YTD ~109：Starlink 15-27 升空（Vandenberg）',b:'Spaceflight Now：6:47 p.m. PDT 9/19（01:47 UTC 9/20）B1093 第 17 次；約 8.5 分後 OCISLY 回收。年內第 81 次 Starlink。接在 9/13 O3b（家族 107）與 9/16 USSF-259 之後 → F9 107＋FH 2。',tags:['ops'],src:'Spaceflight Now L2'},
+  {d:'2026-09-19',t:'報道：Nasdaq-100 權重因鎖倉浮額增加，估由 ~1.28% 升至 ~2.82%',b:'GuruFocus（9/19）：季度再平衡將迫使追蹤 NDX 的被動資金加買 SPCX。文中用「upcoming／is set to see」口徑，本頁不當已完成事實。市值報道約 2.01 兆。',tags:['biz'],src:'GuruFocus L2'},
+  {d:'2026-09-18',t:'SPCX 美 9/18 收 $152.71（−1.36%）· 量能 3.35 億（約 3.8×均量）',b:'前收 9/17 $154.81（+2.60%）；開 $154.60、高 $156.60、低 $149.93。盤後 $152.64。市值約 2.01 兆（L2 CoinGlass）。反應 F14 再滑＋9/24 鎖倉逼近。Motley Fool 頁面同步印出當日跌幅。',tags:['biz','imp'],src:'Yahoo / CoinGlass / Motley Fool L2'},
+  {d:'2026-09-17',t:'SpaceX：Flight 14 改盯 NET 9/28 pending FAA（原 9/22 再滑 6 日）',b:'官方 X：Now targeting … as early as Monday, September 28, pending regulatory approval。未給公開原因。先前官網窗 9/22 07:15 CT／75 分鐘已失效。艦捕仍不在本飛。9/24 ~3.284 億股鎖倉因此早於發射。',tags:['ss','imp'],src:'SpaceX X 9/17 L1'},
+  {d:'2026-09-17',t:'SPCX 美 9/16 收 $150.88（+5.15%）· 重回 $150；9/17 續漲收 $154.81',b:'9/16：前收 $143.49；開 $144.88、高 $153.01、低 $144.36。9/17 開 $153.80、高 $156.87、低 $152.63、收 $154.81（+2.60%）。9/9 鎖倉 −3.9% 後反彈。',tags:['biz','imp'],src:'Yahoo Finance L2'},
+  {d:'2026-09-16',t:'Falcon 9 發射 USSF-259（Vandenberg）',b:'TeslaNorth／SpaceX X：週三窗口升空；一級於 Of Course I Still Love You 回收。此前週二 scrub。為 9/13 家族 107 發之後的下一發。',tags:['ops'],src:'SpaceX X / TeslaNorth L1–L2'},
+  {d:'2026-09-15',t:'SpaceX 官網：Flight 14 窗口曾訂 9/22 07:15 CT（其後 9/17 再滑）',b:'當時 75 分鐘窗口；備援 9/23。首次入軌＋26× Starlink V3 運營部署、~6 圈／~10 小時、太平洋智利以西濺落；助推器灣區濺落；艦捕不在本飛。CFO 9/10：revenue-generating flight。',tags:['ss','imp'],src:'SpaceX.com / Space.com L1–L2'},
   {d:'2026-09-13',t:'Falcon 家族 YTD 達 ~107 發（F9 第 105 發）',b:'Cape 發射 SES O3b mPOWER 末三顆；Space.com：2026 軌道任務 107＝F9 105＋FH 2（另計 Starship 亞軌道 2 次）。',tags:['ops'],src:'Space.com L2'},
   {d:'2026-09-09',t:'第三檔鎖倉解禁 ~3.19 億股 · SPCX 收 $147.55（−3.9%）',b:'與 8/20 同規模解禁、類似跌幅；9/10 另 ~0.59 億關聯方。Motley Fool：當時可交易約 ≤17% 股本；下一檔 9/24 ~3.284 億，Q3 後最大檔 ~13 億股。',tags:['biz','imp'],src:'Motley Fool / prospectus L1–L2'},
   {d:'2026-09-06',t:'SPCX 美 9/4 收 $147.95（−1.2%）· 9/9 鎖倉前最後完整交易週',b:'前收 9/3 $149.74；仍高於 IPO $135，市值約 1.92 兆（L2）。下一催化：9/9 ~3.19 億股解禁、NET 9/15 F14。週末（9/5–6）美股休市。',tags:['biz','imp'],src:'exa / MarketBeat L2'},
@@ -1952,23 +1968,23 @@ function initNewsN(){
       renderNewsN(b.getAttribute('data-f'));
     });
   }
-  // F14: SpaceX.com window opens 2026-09-22 07:15 CT (CDT=UTC-5) = 12:15 UTC = 2026-09-22 20:15 Macau
-  // L1 window (not hard T-0); still pending FAA license.
-  var target=Date.UTC(2026,8,22,12,15,0);
-  var official=true; // official window posted; exact T-0 may still slip
+  // F14: SpaceX 9/17 retarget NET Monday 2026-09-28; last published clock 07:15 CT (CDT=UTC-5) = 12:15 UTC = 2026-09-28 20:15 Macau
+  // India Today (9/19): window still opens 5:45pm IST = 12:15 UTC. L1 still pending FAA; not a hard T-0.
+  var target=Date.UTC(2026,8,28,12,15,0);
+  var official=true; // SpaceX NET posted; exact T-0 may still slip
   function tick(){
     var now=Date.now(),diff=target-now;
     var lbl=document.getElementById('cdLbl');
     function set(id,v){var e=document.getElementById(id);if(e)e.textContent=v;}
     if(diff<=0){
       set('cdD','0');set('cdH','0');set('cdM','0');set('cdS','0');
-      if(lbl)lbl.textContent=official?'窗口已開／進行中（仍以官網為準）':'估窗口已過 · 仍待官方';
+      if(lbl)lbl.textContent=official?'NET 已到／進行中（仍以官網為準）':'估窗口已過 · 仍待官方';
       return;
     }
     var s=Math.floor(diff/1000),d=Math.floor(s/86400);s%=86400;
     var h=Math.floor(s/3600);s%=3600; var m=Math.floor(s/60);s%=60;
     set('cdD',d);set('cdH',('0'+h).slice(-2));set('cdM',('0'+m).slice(-2));set('cdS',('0'+s).slice(-2));
-    if(lbl)lbl.textContent=official?'距官網窗口 9/22 20:15 澳門（仍待 FAA）':'窗口估時 · 非正式';
+    if(lbl)lbl.textContent=official?'距 SpaceX NET 9/28 20:15 澳門（仍待 FAA）':'窗口估時 · 非正式';
   }
   tick();
   if(window._f13cd) clearInterval(window._f13cd);
@@ -1976,7 +1992,10 @@ function initNewsN(){
 }
 /* ===== VIEW A — Tesla AI news ===== */
 var NEWS_A=[
-  {d:'2026-09-17',t:'TSLA 美 9/16 收 $358.08（+0.42%）· 9/17 休市',b:'前收 $356.58；開 $357.93、高 $365.10、低 $354.89、量 ~32.2M。自 9/4 $354.08 小幅修復。監管焦點仍在 Cybercab Special Order（回應至 9/30）。',tags:['rtx'],src:'exa / NimbusCalc / Yahoo L2'},
+  {d:'2026-09-20',t:'TSLA 美 9/18 收 $364.27（−0.53%）· 9/19–20 週末休市',b:'前收 9/17 $366.20（+2.27% vs 9/16 $358.08）。9/18：開 $369.00、高 $370.90、低 $360.75、量 ~51.8M；盤後約 $364.18。監管焦點仍在 Cybercab Special Order（回應至 9/30，未見公開回覆）。',tags:['rtx'],src:'Yahoo Finance L2'},
+  {d:'2026-09-19',t:'FSD v14.3.10／軟體 2026.27.10 開推 · HW4 含 Automatic Collision Evasion',b:'TeslaNewswire／車主社群：HW4 走 v14.3.10（ACE 可在手動駕駛時介入轉向／煞車／加速）；HW3 續 v14.2 Lite，ACE 未列入。繼承 v14.3.9 的 RL／視覺編碼器改進。',tags:['fsd'],src:'TeslaNewswire / Basenor L2'},
+  {d:'2026-09-18',t:'德州 TxDMV：Cybercab 名冊升至 58 台（當日 +9）',b:'TeslaNorth：Tesla Robotaxi, LLC 9/18 再登記 9 個 VIN；同授權 Model Y 390、合計 448。登記≠當下在 Austin 圍欄內載客。仍是 9/3 上路後最清楚的公開車隊數字。',tags:['rtx'],src:'TeslaNorth / TxDMV L2'},
+  {d:'2026-09-17',t:'TSLA 美 9/16 收 $358.08（+0.42%）· 9/17 續漲收 $366.20',b:'9/16：前收 $356.58；開 $357.93、高 $365.10、低 $354.89、量 ~32.2M。9/17 開 $367.48、高 $374.12、低 $363.22。Special Order 期限仍 9/30。',tags:['rtx'],src:'Yahoo Finance L2'},
   {d:'2026-09-15',t:'NHTSA Special Order（9/10）細節：Cybercab 如何自證合規 FMVSS',b:'Electrek：21 項要求、宣誓回應至 9/30；對照 Zoox 已走 Part 555 豁免。AQ26002 升級為法律強制令。罰則上限報道約 $1.39 億級。',tags:['rtx'],src:'Electrek L2'},
   {d:'2026-09-09',t:'FSD v14.3.9／v14.2 Lite＋Automatic Collision Evasion 開推',b:'軟體 2026.27.6：HW4 新增手動駕駛碰撞規避介入；v14.3.9 改進反應／停車／緊急車輛等。Ashok 其後預告 v15 更早預測與避撞。',tags:['fsd'],src:'Teslarati / Not a Tesla App L2'},
   {d:'2026-09-06',t:'TSLA 美 9/4 收 $354.08（−5.9%）— Cybercab 翌日大跌；週末休市',b:'前收 9/3 $376.37（+5.4%）。Motley Fool／MacroTrends：開 $362.07、高 $364.69、低 $351.32。市場定價「上路但無台數／經濟數據」＋ NHTSA 審計。下一個美盤 9/7。',tags:['rtx'],src:'Motley Fool / MacroTrends L2'},
@@ -2075,14 +2094,14 @@ function _deadFcCharts_removed(){ return;
   ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{boxWidth:12,padding:12}},tooltip:{callbacks:{label:function(c){return c.parsed.y+' 台';}}}},scales:{x:{grid:g},y:{grid:g,beginAtZero:true,ticks:{callback:function(v){return v+' 台';}}}}}});
 }
 /* ===== 頂部「預期 vs 實際」成績單（財報公佈後：只改 actual 值，顏色/圖自動出來） ===== */
-var EXPECT_T={sub:'Q3 預期 · 尚未公佈 · 共識 LSEG/Yahoo/Visible Alpha · 更新 2026-09-17',items:[
-  {name:'交付量',unit:'萬台',dec:1,expect:45.6,actual:null,date:'10月初',note:'Visible Alpha 共識 45.6 萬 · GS 砍至 43.5 萬',prev:[['上季',48.0],['同期',49.7]],goto:'tslaDeliv'},
-  {name:'總營收',unit:'億美元',dec:1,expect:275.3,actual:null,date:'10/28',note:'Yahoo/LSEG 28 分析師均值 $27.53B',prev:[['上季',282.4],['同期',281.0]],goto:'tslaBeatRev'},
-  {name:'調整後 EPS',unit:'美元',dec:2,expect:0.45,actual:null,date:'10/28',note:'Yahoo 26 分析師均值 · 約 10/28 盤後',prev:[['上季',0.33],['同期',0.50]],goto:'tslaBeatRev'},
-  {name:'非 GAAP 淨利',unit:'億美元',dec:1,expect:15.8,actual:null,date:'10/28',note:'EPS共識×~35.2億股推算 · L2',prev:[['上季',12.0],['同期',17.7]],goto:'tslaProfit'}
+var EXPECT_T={sub:'Q3 預期 · 尚未公佈 · 共識 LSEG/Yahoo/Visible Alpha · 更新 2026-09-20',items:[
+  {name:'交付量',unit:'萬台',dec:1,expect:45.6,actual:null,date:'10月初',note:'Visible Alpha 共識 45.6 萬 · GS 43.5／Barclays 47.5／Bloomberg ~46.6',prev:[['上季',48.0],['同期',49.7]],goto:'tslaDeliv'},
+  {name:'總營收',unit:'億美元',dec:1,expect:275.3,actual:null,date:'10/28',note:'Yahoo/LSEG ~$27.53B（本週未見明確移動）',prev:[['上季',282.4],['同期',281.0]],goto:'tslaBeatRev'},
+  {name:'調整後 EPS',unit:'美元',dec:2,expect:0.46,actual:null,date:'10/28',note:'MarketWatch/Yahoo 均值 $0.46 · 約 10/28 盤後',prev:[['上季',0.33],['同期',0.50]],goto:'tslaBeatRev'},
+  {name:'非 GAAP 淨利',unit:'億美元',dec:1,expect:16.2,actual:null,date:'10/28',note:'EPS $0.46×~35.2億股推算 · L2',prev:[['上季',12.0],['同期',17.7]],goto:'tslaProfit'}
 ]};
-var EXPECT_S={sub:'Q3 預期 · 尚未公佈 · 共識 MarketScreener/Profit · 更新 2026-09-17',items:[
-  {name:'總營收',unit:'億美元',dec:1,expect:128.4,actual:null,date:'11/3',note:'MarketScreener/Profit ~$12.8B · ~12 分析師',prev:[['上季',78.1]],goto:'spxBeatRev'},
+var EXPECT_S={sub:'Q3 預期 · 尚未公佈 · 共識 MarketScreener/Profit · 更新 2026-09-20',items:[
+  {name:'總營收',unit:'億美元',dec:1,expect:128.4,actual:null,date:'11/3',note:'維持 MarketScreener/Profit ~$12.8B · 未能獨立核實移動',prev:[['上季',78.1]],goto:'spxBeatRev'},
   {name:'總 CapEx',unit:'億美元',dec:0,expect:184,actual:null,date:'11/3',neutral:true,note:'管理層指引 Q3≈Q2 $18.4B · L1 IR 8/4',prev:[['上季',184]],goto:'spxTree'}
 ]};
 function eFmt(v,dec){return Number(v).toLocaleString(undefined,{minimumFractionDigits:dec,maximumFractionDigits:dec});}
