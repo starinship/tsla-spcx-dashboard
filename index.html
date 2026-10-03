@@ -356,6 +356,13 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 .viewN .ptbl tr.run .pstt{color:#f5b942}
 .viewN .ptbl tr.fail .pstt{color:#ef4444}
 .viewN .ptbl tr.todo .pstt{color:#64748b}
+.viewN .pos-c{color:#22c55e;font-weight:700}
+.viewN .flat{color:#e3b341;font-weight:700}
+.viewN .scroll{overflow-x:auto;border:1px solid #283142;border-radius:12px;margin:8px 0 14px}
+.viewN table.wide{width:100%;border-collapse:collapse;font-size:13px}
+.viewN table.wide th,.viewN table.wide td{padding:9px 12px;text-align:left;border-bottom:1px solid #283142;vertical-align:top;white-space:normal;color:#cbd5e1}
+.viewN table.wide thead th{background:#1b2130;color:#94a3b8;font-weight:600;font-size:12px}
+.viewN table.wide td.metric-row{color:#e6edf3;font-weight:700;white-space:nowrap}
 .viewN .vfoot{padding:10px 16px 14px;font-size:12px;color:#94a3b8;border-top:1px solid #1f2735;line-height:1.55}
 /* Mission profile (post-launch Starship) */
 .viewN .mprof{background:#141923;border:1px solid #283142;border-radius:14px;padding:18px 20px;margin:12px 0}
@@ -436,7 +443,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
   <div class="tabbtn active" id="btnN" onclick="showView('N')">
     <div class="ic">📰</div>
     <div><div class="t1">SpaceX 動態<span class="new">LIVE</span></div>
-    <div class="t2">F14 已入軌 · 下一檔鎖倉 10/9 · SPCX $159</div></div>
+    <div class="t2">下一發 F15 · NET 未公布 · SPCX $159</div></div>
   </div>
   <div class="tabbtn" id="btnC" onclick="showView('C')">
     <div class="ic">📉</div>
@@ -451,7 +458,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
   <div class="tabbtn" id="btnS" onclick="showView('S')">
     <div class="ic">🚀</div>
     <div><div class="t1">SpaceX 逐季深度</div>
-    <div class="t2">Q2 營收 78 億超 · F14 已入軌 · SPCX $159</div></div>
+    <div class="t2">Q2 營收 78 億超 · 下一發 F15 · SPCX $159</div></div>
   </div>
 </div>
 
@@ -718,173 +725,166 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 <div class="view active viewN" id="viewN">
 <div class="kicker">SpaceX News · Starship Tracker · 動態追蹤</div>
 <p style="font-size:23px;font-weight:800;margin:8px 0 4px">📰 SpaceX 最新動態 · Starship 測試進程</p>
-  <div class="note">聚焦 <b>Flight 14（B21 × S41）已飛</b> · <b>首次入軌</b>＋26× Starlink V3 · 任務提前結束 · 艦捕仍未做 ｜ 資料截至 <b>2026-10-03</b> ｜ <b>時間一律澳門（UTC+8）</b> ｜ <span class="ly L1">L1</span> SpaceX 官網／IR ｜ <span class="ly L2">L2</span> Space.com／Spaceflight Now</div>
+  <div class="note">聚焦 <b>Flight 15（B22 × S42）準備中</b> · NET <b>未公布</b> · 艦捕尚未官宣 ｜ F14 已結案（入軌＋26× V3，任務縮短）｜ 資料截至 <b>2026-10-03</b> ｜ <b>時間一律澳門（UTC+8）</b> ｜ <span class="ly L1">L1</span> SpaceX 官網／IR ｜ <span class="ly L2">L2</span> NSF／Space.com ｜ <span class="ly L3">L3</span> 空域簡報日期，不當窗口</div>
 
-<!-- ===== F14 HERO ===== -->
+<!-- ===== F15 HERO ===== -->
 <div class="hero">
-  <div class="htag">Result · Starship Flight 14 · 2026-09-28 · 首次入軌</div>
-  <h2>🚀 Flight 14 結果 · Super Heavy B21 × Starship S41</h2>
-  <p class="hsub">Starbase Pad 2｜ 澳門 <b>9/28 20:48</b> 升空（7:48 a.m. CT／12:48 UTC · Space.com）｜ <b>首次入軌 + 26 顆 Starlink V3 部署成功</b>｜ 上升段一具上層級引擎提前關機，任務由約 6 圈／約 10 小時縮至 <b>約 3 小時 8 分</b>｜ 飛船<b>夏威夷以北</b>太平洋受控濺落後側翻、殘餘推進劑點火｜ 助推器墨西哥灣濺落｜ <b>艦捕仍未做</b><br><span style="opacity:.85;font-size:12.5px">L2：Space.com／Spaceflight Now（濺落 11:57 a.m. EDT）。官網索引頁寫 7:48 a.m. CT、入軌、26× V3、因引擎問題縮短在軌、夏威夷以北海域濺落。下一飛 NET 未由 SpaceX 公布；UBS 預期 F15 年底並嘗試艦捕，本頁不把該預期當成窗口</span></p>
-  <div class="cdown" id="f13cd">
-    <div class="u"><b id="cdD">—</b><span>天</span></div>
-    <div class="u"><b id="cdH">—</b><span>時</span></div>
-    <div class="u"><b id="cdM">—</b><span>分</span></div>
-    <div class="u"><b id="cdS">—</b><span>秒</span></div>
-    <div class="u" style="min-width:auto;padding:10px 16px;text-align:left"><b id="cdLbl" style="font-size:14px;color:#22c55e">計算中…</b><span>升空後經過 · 澳門</span></div>
+  <div class="htag">Next · Starship Flight 15 · NET 未公布 · 不啟用倒數</div>
+  <h2>🚀 Flight 15 準備 · Super Heavy B22 × Starship S42</h2>
+  <p class="hsub">Starbase <b>Pad 2（OLP-2）</b>｜ Block 3／v3 第四對｜ 預期再入低軌，載荷數量與落區<b>官方未公布</b>｜ 艦捕是 9/14 的條件式說法，F14 之後 SpaceX <b>尚未重確認</b>剖面<br><span style="opacity:.85;font-size:12.5px">L2：<a href="https://en.wikipedia.org/wiki/Starship_flight_15" target="_blank" rel="noopener">Wikipedia F15</a>（引 Next Spaceflight／NSF，截至 9/28 無官網 T-0）。<a href="https://www.nasaspaceflight.com/2026/09/flight-15-pairing-masseys/" target="_blank" rel="noopener">NSF 9/9</a>：B22×S42 為 F15 配對。官網發射索引最新一筆 Starship 仍是 <a href="https://www.spacex.com/launches/starship-flight-14/" target="_blank" rel="noopener">F14</a>。沒有 NET，本頁不倒數。</span></p>
+  <div class="cdown" id="f15status">
+    <div class="u" style="min-width:auto;padding:12px 18px;text-align:left">
+      <b id="cdLbl" style="font-size:22px;color:#f5b942">未公布</b>
+      <span>SpaceX 尚未給 F15 NET · 倒數已關閉</span>
+    </div>
   </div>
+  <p class="note" style="margin:8px 0 0">L3 旁註（<b>不是窗口</b>）：9/24 NSF 轉貼 CADENA 空域簡報，把 F15 寫成 NET <b>10/19</b>，並自註 “super provisional”。<a href="https://gizmodo.com/starship-has-finally-gone-orbital-now-comes-the-hard-part-2000818803" target="_blank" rel="noopener">Gizmodo 9/29</a>：這是 FAA ATCSCC 的空域估計，不是 SpaceX 日期，而且幾乎一定會滑。<a href="https://www.space.com/space-exploration/launches-spacecraft/starship-just-reached-orbit-for-the-1st-time-whats-next-for-the-spacex-megarocket" target="_blank" rel="noopener">Space.com 9/29</a> 同樣說沒有官方發射日。9/9 NSF 另記一紙 F15 通訊授權申請窗（2026-09-28 至 2027-03-28），當時尚未核准，也不是 T-0。</p>
   <div class="hgrid">
-    <div class="hcell"><div class="hl">堆疊（L2）</div><div class="hv">B21 × S41</div><div class="hs">v3 / Block 3 · Pad 2 · 已飛</div></div>
-    <div class="hcell"><div class="hl">助推器結果</div><div class="hv" style="font-size:15px">灣區濺落</div><div class="hs">受控垂直濺落 · 塔捕非本飛</div></div>
-    <div class="hcell"><div class="hl">飛船結果</div><div class="hv" style="font-size:15px;color:#22c55e">已入軌</div><div class="hs">26× V3 · 北太平洋濺落</div></div>
-    <div class="hcell"><div class="hl">狀態</div><div class="hv" style="color:#22c55e">已飛 · 縮短</div><div class="hs">入軌＋部署達成 · ~6 圈未飛完</div></div>
+    <div class="hcell"><div class="hl">堆疊（L2）</div><div class="hv">B22 × S42</div><div class="hs">v3 / Block 3 · Pad 2 · 預期配對</div></div>
+    <div class="hcell"><div class="hl">NET</div><div class="hv" style="color:#f5b942">未公布</div><div class="hs">官網無任務頁 · 不倒數</div></div>
+    <div class="hcell"><div class="hl">艦捕</div><div class="hv" style="font-size:15px">未確認</div><div class="hs">Musk 9/14 條件式 · 落區 TBA</div></div>
+    <div class="hcell"><div class="hl">狀態</div><div class="hv" style="font-size:16px;color:#f5b942">裝引擎 · 待靜火</div><div class="hs">cryo 已做 · 執照仍只涵蓋 F14</div></div>
   </div>
 </div>
 
 <div class="callout info">
-  <b>編號說明：</b>Flight 14 公開追蹤堆疊為 <b>B21（Super Heavy）+ S41（Starship）</b>（L2：NSF／Wikipedia）。口語勿與 B40×S20 混淆。F13 的 B20／S40 已結案（S40 8/18 拖至聖誕島，史上首次上層級完整回收）。<b>9/28 結果：</b>首次入軌與 26× V3 部署達成，但上升段掉一具引擎、在軌時間大幅縮短，艦捕仍在後續。Falcon 家族 YTD <b>~113</b>（10/3 · F9 <b>110</b> nextlaunch.today ＋ FH <b>3</b>，含 10/1 NROL-97；KeepTrack 另計 F9 111，故或為 113–114）。Q2 訂戶仍 <b>1,200 萬 L1</b>（Q3 尚未公佈）。
+  <b>編號說明：</b>下一飛公開追蹤堆疊是 <b>B22（Super Heavy）+ S42（Starship）</b>，Block 3／v3 第四對（L2：<a href="https://www.nasaspaceflight.com/2026/09/flight-15-pairing-masseys/" target="_blank" rel="noopener">NSF 9/9</a>、<a href="https://www.nextspaceflight.com/starship/hardware/81/" target="_blank" rel="noopener">Next Spaceflight B22</a>／<a href="https://nextspaceflight.com/starship/hardware/80/" target="_blank" rel="noopener">S42</a>）。F14 的 B21×S41 已結案。口語勿把序號說成 B40。Falcon 家族 YTD <b>~113</b>（10/3 · F9 <b>110</b> nextlaunch.today ＋ FH <b>3</b>，含 10/1 NROL-97；KeepTrack 另計 F9 111，故或為 113–114）。Q2 訂戶仍 <b>1,200 萬 L1</b>（Q3 尚未公佈）。
 </div>
 
 <div class="skpi">
-  <div class="k"><div class="kl">上一重大發射</div><div class="kv" style="color:#22c55e;font-size:18px">F14 已飛</div><div class="kc">9/28 · 入軌＋26× V3 · 任務縮短</div></div>
-  <div class="k"><div class="kl">F14 主結果</div><div class="kv" style="font-size:18px;color:#22c55e">首次入軌</div><div class="kc">濺落後側翻 · 艦捕仍未做</div></div>
+  <div class="k"><div class="kl">下一重大發射</div><div class="kv" style="color:#f5b942;font-size:18px">F15 · 未公布</div><div class="kc">B22 × S42 · Pad 2 · 無 NET</div></div>
+  <div class="k"><div class="kl">F14 成績單</div><div class="kv" style="font-size:18px;color:#22c55e">首次入軌</div><div class="kc">26× V3 ✅ · ~3h08m · 無艦捕</div></div>
   <div class="k"><div class="kl">Falcon YTD 2026</div><div class="kv">~113 發</div><div class="kc">F9 110＋FH 3 · as-of 10/3 · L2</div></div>
   <div class="k"><div class="kl">SPCX 股價</div><div class="kv" style="color:#22c55e">$158.96</div><div class="kc">美 10/2 收 · +7.35% · 市值 ~2.10 兆</div></div>
 </div>
 
 <div class="callout risk">
-  <b>投資／執行風險（F14 之後）：</b>① <b>艦捕仍未做</b>——本飛助推器與飛船都是海上濺落；Musk 8/20 的「幾個月後」還沒有新的官網窗口。② <b>入軌是達成了，剖面沒飛完</b>——一具上層級引擎提前關機，約 6 圈／智利以西濺落改成約 3 小時、夏威夷以北；濺落後側翻點火是海上濺落的常見結尾，但引擎問題會拖後續復飛信心。③ <b>9/24 鎖倉已過</b>（最多約 3.284 億股；當日收 $148.03，較 9/23 $148.36 約 −0.2%）。下一檔仍是 <b>10/9</b> 與 <b>10/24</b>（週六，首個交易日 10/26），各最多約 3.284 億股。④ 發射日 9/28 收 $145.47（較 9/25 $148.68 約 −2.2%），其後 10/2 收 $158.96（+7.35%）。⑤ Q3 訂戶仍無 L1；UBS 的 1,430 萬是預測，不是實績。
+  <b>投資／執行風險（盯 F15）：</b>① <b>艦捕仍未官宣。</b>Musk 在 9/14 All-In 說，若 F14 順利，F15 可能嘗試上層級塔捕，第一次成功率口述「至少 50% 或 60%」（<a href="https://www.space.com/space-exploration/launches-spacecraft/starship-just-reached-orbit-for-the-1st-time-whats-next-for-the-spacex-megarocket" target="_blank" rel="noopener">Space.com 9/29</a>／<a href="https://en.wikipedia.org/wiki/Starship_flight_15" target="_blank" rel="noopener">Wikipedia</a>）。F14 之後公司沒有重確認回收方案；助推器要不要回 Pad 2，同樣沒有公開定案。Block 3、Pad 2 都還沒做過塔捕。Gizmodo：若再有引擎問題迫使提前離軌，塔捕窗口就沒了。② <b>節奏沒有官方 NET。</b>硬體還差靜火、可能的 F14 引擎整改、載荷與飛行堆疊。NSF 9/30 估計兩級或在 10 月底接近飛行就緒——那是準備節奏，不是發射日。L3 的 10/19 比「先靜火」更緊，本頁不採用。③ <b>FAA：</b>VOL 23-129 的 Order A-2 只授權 <b>F14 一次</b>軌道再入（夏威夷以北與智利以西兩個預協調區；<a href="https://www.nasaspaceflight.com/2026/09/starship-flight-14-orbit/" target="_blank" rel="noopener">NSF</a>）。F15 要另做執照修改；若改艦捕，安全區審查會更長——艦捕就是這樣被移出 F14 的。截至 10/3，<b>未見</b> FAA 把濺落後側翻列為 mishap 的公開命令：側翻發生在計畫內、不回收的海上濺落之後。這和 5 月 F12 助推器被要求調查不是同一筆公開紀錄。9/29 的 SLC-37 補充環評是佛州，不是這次 Starbase 執照。④ <b>SPCX 催化：</b>10/9 鎖倉最多約 3.284 億股；10/24（週六，首個交易日 10/26）再一檔同規模。Q3 財報仍是估計 <b>~11/3</b>（Yahoo／days.to，未官宣；另有站寫 11/17，衝突故不改）。10/2 收 $158.96。⑤ Q3 訂戶仍無 L1；UBS 的 1,430 萬是預測，不是實績。
 </div>
 
-<!-- ===== F14 VEHICLE CARDS: B21 / S41 ===== -->
-<h2>🛠️ Flight 14 硬件 · 測試進程 <span class="ly L2">L2</span></h2>
-<p class="note">B21／S41 狀態以公開影像與社區時間線彙整，<b>非官方飛行合格證</b>。步驟會隨 cryo／靜火／堆疊更新。</p>
+<!-- ===== F15 VEHICLE CARDS: B22 / S42 ===== -->
+<h2>🛠️ Flight 15 硬件 · 測試進程 <span class="ly L2">L2</span></h2>
+<p class="note">B22／S42 以 NSF 與 Next Spaceflight 的公開測試紀錄彙整，<b>不是官方飛行合格證</b>。靜火、飛行堆疊與 T-0 截至 10/3 都還沒有完成紀錄。9/30 的「裝引擎」是當時的狀態，其後若已靜火，本頁尚未看到公開確認。</p>
 <div class="vgrid">
   <div class="vcard prime boost">
     <div class="vtop">
       <div class="vh">
         <div>
-          <div class="vn">B21 · Super Heavy</div>
-          <div class="vro">一級助推器 · v3／Block 3 · Flight 14 主飛</div>
+          <div class="vn">B22 · Super Heavy</div>
+          <div class="vro">一級助推器 · v3／Block 3 · Flight 15 預期主飛</div>
         </div>
-        <span class="badge go">已飛 · 灣區濺落</span>
+        <span class="badge test">Cryo 完成 · 待靜火</span>
       </div>
       <div class="vmeta">
         <span class="vm">角色 <b>一級</b></span>
-        <span class="vm">引擎 <b>Raptor 3 ×33</b></span>
-        <span class="vm">回收 <b>灣區濺落（已發生）</b></span>
-        <span class="vm">進度 <b>7／7</b></span>
+        <span class="vm">引擎 <b>Raptor 3 ×33（安裝中）</b></span>
+        <span class="vm">回收 <b>未定 · 塔捕未確認</b></span>
+        <span class="vm">進度 <b>2 完成／裝引擎</b></span>
       </div>
-      <div class="pbar"><i style="width:100%"></i></div>
+      <div class="pbar"><i style="width:38%"></i></div>
     </div>
     <table class="ptbl">
       <thead><tr><th>#</th><th>測試／工序</th><th>狀態</th></tr></thead>
       <tbody>
-        <tr class="done"><td class="ph">1</td><td><span class="pst">產線出廠／進場</span><div class="psd">F14 候選助推器 · 已進入測試序列</div></td><td class="pstt">完成</td></tr>
-        <tr class="done"><td class="ph">2</td><td><span class="pst">低溫證明 Cryo Proof</span><div class="psd">公開追蹤 7/18–20 完成 · L2</div></td><td class="pstt">完成</td></tr>
-        <tr class="done"><td class="ph">3</td><td><span class="pst">Raptor 3 全套安裝／檢查</span><div class="psd">33 台 · 吸取 F13 著陸點火缺口</div></td><td class="pstt">完成</td></tr>
-        <tr class="done"><td class="ph">4</td><td><span class="pst">全時長靜態點火</span><div class="psd">8/28 Pad 2 · 33 機 · SpaceX 官方影片（L1／L2）</div></td><td class="pstt">完成</td></tr>
-        <tr class="done"><td class="ph">5</td><td><span class="pst">回 Mega Bay · 飛行準備覆核</span><div class="psd">8/29 滾回 MB-1 · 其後完成堆疊並升空</div></td><td class="pstt">完成</td></tr>
-        <tr class="done"><td class="ph">6</td><td><span class="pst">堆疊 · Flight 14 升空</span><div class="psd">澳門 9/28 20:48（7:48 a.m. CT）Pad 2 升空</div></td><td class="pstt">完成</td></tr>
-        <tr class="done"><td class="ph">7</td><td><span class="pst">返回 · 灣區著陸點火</span><div class="psd">墨西哥灣受控垂直濺落（約 T+7 分）。爬升／boostback 有引擎提前關機，未影響濺落。塔捕非本飛</div></td><td class="pstt">濺落</td></tr>
+        <tr class="done"><td class="ph">1</td><td><span class="pst">主結構堆疊</span><div class="psd">8 月已在 Mega Bay 1 完成堆疊，並被指派為 F15（<a href="https://www.nasaspaceflight.com/2026/08/starbases-future-production-capacity/" target="_blank" rel="noopener">NSF</a>）</div></td><td class="pstt">完成</td></tr>
+        <tr class="done"><td class="ph">2</td><td><span class="pst">低溫證明 Cryo Proof</span><div class="psd">Massey’s：9/9 與 9/10 兩輪（Next Spaceflight）。NSF 9/9：自 MB-1 推出做 cryo，其後才裝引擎、Pad 2 靜火</div></td><td class="pstt">完成</td></tr>
+        <tr class="run"><td class="ph">3</td><td><span class="pst">Raptor 安裝</span><div class="psd">9/12 已滾回 MB-1 準備裝引擎（NSF 9/14 筷子文）。9/30 NSF：仍在 Mega Bay 裝 Raptor，尚未靜火</div></td><td class="pstt">進行中</td></tr>
+        <tr class="todo"><td class="ph">4</td><td><span class="pst">靜態點火</span><div class="psd">截至 10/3 無公開完成紀錄。9/30 估計約兩週內可排，不是已發生</div></td><td class="pstt">未做</td></tr>
+        <tr class="todo"><td class="ph">5</td><td><span class="pst">與 S42 飛行堆疊</span><div class="psd">尚未公開。9 月的塔上測試是 S42 單獨上塔，不是全箭堆疊</div></td><td class="pstt">未做</td></tr>
+        <tr class="todo"><td class="ph">6</td><td><span class="pst">返回方式</span><div class="psd">塔捕或海上機動都未官宣。Block 3、Pad 2 都還沒捕過助推器（NSF 9/9）</div></td><td class="pstt">未定</td></tr>
       </tbody>
     </table>
-    <div class="vfoot"><b>結果：</b>B21 完成升空與灣區濺落。Space.com：爬升期間數具引擎提前關機，未阻止受控濺落。下一張門票仍是塔捕，本飛沒做。</div>
+    <div class="vfoot"><b>盯什麼：</b>33 機靜火有沒有公開，以及 F14 爬升／boostback／著陸掉引擎會不會改 B22。塔捕不要在靜火和執照之前當成已排程。</div>
   </div>
 
   <div class="vcard prime ship">
     <div class="vtop">
       <div class="vh">
         <div>
-          <div class="vn">S41 · Starship</div>
-          <div class="vro">二級飛船 · v3／Block 3 · 首軌＋V3 主角</div>
+          <div class="vn">S42 · Starship</div>
+          <div class="vro">二級飛船 · v3／Block 3 · F15 預期上層級</div>
         </div>
-        <span class="badge go">已入軌 · 提前結束</span>
+        <span class="badge test">Cryo＋塔測 · 待靜火</span>
       </div>
       <div class="vmeta">
         <span class="vm">角色 <b>上層級</b></span>
-        <span class="vm">引擎 <b>Raptor 3 ×6</b></span>
-        <span class="vm">回收 <b>夏威夷以北濺落</b></span>
-        <span class="vm">進度 <b>7／7</b></span>
+        <span class="vm">引擎 <b>安裝中 · 靜火未做</b></span>
+        <span class="vm">回收 <b>艦捕未確認</b></span>
+        <span class="vm">進度 <b>3 完成／裝引擎</b></span>
       </div>
-      <div class="pbar"><i style="width:100%"></i></div>
+      <div class="pbar"><i style="width:52%"></i></div>
     </div>
     <table class="ptbl">
       <thead><tr><th>#</th><th>測試／工序</th><th>狀態</th></tr></thead>
       <tbody>
-        <tr class="done"><td class="ph">1</td><td><span class="pst">產線／進場</span><div class="psd">F14 飛船候選 · 測試戰役進行中</div></td><td class="pstt">完成</td></tr>
-        <tr class="done"><td class="ph">2</td><td><span class="pst">Cryo Proof</span><div class="psd">雙輪 cryo 6/30 完成 · L2</div></td><td class="pstt">完成</td></tr>
-        <tr class="done"><td class="ph">3</td><td><span class="pst">單機靜火（離軌剖面）</span><div class="psd">8/19 Massey’s · 模擬離軌點火 · L2</div></td><td class="pstt">完成</td></tr>
-        <tr class="done"><td class="ph">4</td><td><span class="pst">六機 60 秒全時長靜火</span><div class="psd">8/21 · SpaceX 官方確認成功（L1 社媒）· 回 MB-2</div></td><td class="pstt">完成</td></tr>
-        <tr class="done"><td class="ph">5</td><td><span class="pst">載荷整合（V3）＋終檢</span><div class="psd">26 顆 Starlink V3 已隨飛行部署</div></td><td class="pstt">完成</td></tr>
-        <tr class="done"><td class="ph">6</td><td><span class="pst">堆疊 · Flight 14 升空</span><div class="psd">9/28 升空。六具之一在爬升提前關機；評估後仍執行入軌點火</div></td><td class="pstt">完成</td></tr>
-        <tr class="done"><td class="ph">7</td><td><span class="pst">入軌 · V3 部署 · 再入濺落</span><div class="psd">入軌＋26× V3 達成。原 ~6 圈／智利以西改為約 3h08m、夏威夷以北。三具海平面 Raptor 著陸點火後受控尾先濺落，隨即側翻、殘餘推進劑點火。艦捕未做</div></td><td class="pstt">濺落</td></tr>
+        <tr class="done"><td class="ph">1</td><td><span class="pst">主結構</span><div class="psd">8 月桶段已在 Mega Bay 2 堆完，被寫成 F15 飛船（<a href="https://www.nasaspaceflight.com/2026/08/starbase-lining-future-vehicles/" target="_blank" rel="noopener">NSF</a>）</div></td><td class="pstt">完成</td></tr>
+        <tr class="done"><td class="ph">2</td><td><span class="pst">Cryo Proof</span><div class="psd">Massey’s：9/3 與 9/4（Next Spaceflight）。NSF 9/9：在 B22 進場前已做過兩輪，其後又回去加測</div></td><td class="pstt">完成</td></tr>
+        <tr class="done"><td class="ph">3</td><td><span class="pst">塔臂／快速斷開演練</span><div class="psd">9/11–12 Pad 2：筷子把尚未裝飛行引擎的 S42 抬到模擬捕獲位置，並對過 Ship Quick Disconnect（Wikipedia 引 NSF 9/14）</div></td><td class="pstt">完成</td></tr>
+        <tr class="run"><td class="ph">4</td><td><span class="pst">Raptor 安裝</span><div class="psd">演練後滾回產線裝引擎。9/30 NSF：與 B22 一起在各自 Mega Bay 裝 Raptor</div></td><td class="pstt">進行中</td></tr>
+        <tr class="todo"><td class="ph">5</td><td><span class="pst">靜態點火</span><div class="psd">截至 10/3 無公開完成紀錄。9/30 估計約兩到三週可排</div></td><td class="pstt">未做</td></tr>
+        <tr class="todo"><td class="ph">6</td><td><span class="pst">載荷 · 飛行堆疊</span><div class="psd">載荷數量官方未公布。飛行堆疊未公開</div></td><td class="pstt">未做</td></tr>
       </tbody>
     </table>
-    <div class="vfoot"><b>結果：</b>S41 完成首次入軌與 V3 部署，但剖面被縮短。熱盾撐過再入並完成著陸點火；海上側翻點火不是塔捕。運營節奏要看下一飛能不能飛完計畫圈數。</div>
+    <div class="vfoot"><b>盯什麼：</b>六機靜火，以及載荷是不是又一批 V3。塔測只證明接口練過，不等於這飛一定艦捕。</div>
   </div>
 </div>
 
-<!-- ===== F14 mission profile (planned) ===== -->
-<h2>🛰️ Flight 14 · 計劃剖面 vs 9/28 結果 <span class="ly L2">L2</span></h2>
-<p class="note">左下仍保留發射前的計劃敘事，方便對表。<b>實際：</b>入軌與 26× V3 達成；約 6 圈／智利以西／~10 小時改為約 3 小時 8 分、夏威夷以北。艦捕仍未做。</p>
-
+<!-- ===== F15 objectives (not a fake profile) ===== -->
+<h2>🎯 Flight 15 目標 · 哪些已說、哪些還沒 <span class="ly L2">L2</span></h2>
+<p class="note">SpaceX 截至 9/28 <b>沒有公布</b> F15 的載荷與詳細軌道剖面（Wikipedia）。下面把「預期／條件式說法」和「官方任務書」分開。推進劑轉移只出現在推測，不當目標。</p>
 <div class="mprof">
-  <div class="mtitle">S41 升空後預計路徑（與 F13 的關鍵差異）</div>
-  <p class="msub">F13 是亞軌道＋印度洋濺落；<b>F14 終點敘事改為首次穩定軌道 + V3 入軌部署</b>。艦捕已從本飛拿掉（Musk 8/20）。助推器仍以灣區濺落為主。</p>
+  <div class="mtitle">目前能寫進剖面的，只有「再入軌」這一件</div>
+  <p class="msub">發射台是 Starbase Pad 2。軌道體制被寫成低軌。落區兩級都是 TBA。艦捕、助推器塔捕、V3 顆數、在軌加注演示，都還沒有任務頁。</p>
   <div class="mflow">
-    <div class="mf"><div class="mn">①</div><div class="mt">升空／熱分離</div><div class="md">B21 33 台升空 → 級間分離</div></div>
-    <div class="mf"><div class="mn">②</div><div class="mt">上層級入軌</div><div class="md"><b>近地點抬升</b> · 首次軌道嘗試</div></div>
-    <div class="mf"><div class="mn">③</div><div class="mt">載荷部署</div><div class="md">26× Starlink V3 <b>入軌</b></div></div>
-    <div class="mf"><div class="mn">④</div><div class="mt">在軌／離軌</div><div class="md">Raptor 重點火 · 對準再入走廊</div></div>
-    <div class="mf"><div class="mn">⑤</div><div class="mt">再入 + 襟翼</div><div class="md">熱盾數據 · 動態轉彎</div></div>
-    <div class="mf"><div class="mn">⑥</div><div class="mt">太平洋濺落</div><div class="md">實際：夏威夷以北 · 側翻點火</div></div>
+    <div class="mf"><div class="mn">①</div><div class="mt">升空</div><div class="md">Pad 2 · B22 × S42</div></div>
+    <div class="mf"><div class="mn">②</div><div class="mt">再入軌</div><div class="md">預期 LEO · 第二軌次</div></div>
+    <div class="mf"><div class="mn">③</div><div class="mt">載荷</div><div class="md"><b>未公布</b> · 勿沿用 26</div></div>
+    <div class="mf"><div class="mn">④</div><div class="mt">在軌時長</div><div class="md">未公布 · F14 沒飛完</div></div>
+    <div class="mf"><div class="mn">⑤</div><div class="mt">艦捕</div><div class="md">條件式 · <b>未確認</b></div></div>
+    <div class="mf"><div class="mn">⑥</div><div class="mt">助推器回收</div><div class="md">塔捕或濺落 · <b>未定</b></div></div>
   </div>
   <div class="mdet">
     <div class="box">
-      <h4>🎯 F14 三大主目標（市場盯的）</h4>
+      <h4>已有公開口徑</h4>
       <ul>
-        <li><b>首次入軌</b>：Starship 從試飛轉「能把有效載荷送進穩定軌道」。FCC 申請寫明 orbital second stage（L2）。失敗＝V3 星座節奏再拖。</li>
-        <li><b>Starlink V3 入軌部署</b>：F13 是亞軌道演示；本飛要把 <b>26 顆</b> V3 留在運營軌道（太大、只有 Starship 打得動；CFO：revenue-generating）。</li>
-        <li><b>助推器完整軟濺落</b>：補 F13 著陸點火缺口，保護後續 booster catch。艦捕不在本飛。</li>
+        <li><b>再入低軌：</b>Wikipedia／Next Spaceflight 把 F15 寫成第二次運營飛行、LEO。NSF 9/9 的通訊申請也寫 orbital second stage，窗是 9/28/2026–3/28/2027，當時未核准。</li>
+        <li><b>艦捕（條件式，L2）：</b>Musk 9/14：F14 順利才考慮在 F15 捕上層級，第一次「至少 50% 或 60%」。Space.com 9/29：F14 達陣讓這個選項還在，但公司沒給任務剖面。</li>
+        <li><b>助推器塔捕：</b>NSF 9/9 說可能捕助推器、飛船或兩者；Wikipedia 寫回收方案截至 9/28 未重確認。最佳情況不是計畫。</li>
       </ul>
     </div>
     <div class="box">
-      <h4>📌 與 F13 對照 · 刻意差異</h4>
+      <h4>明確還沒有</h4>
       <ul>
-        <li><b>F13 已做</b>：V3×20 亞軌道部署、太空重點火、印度洋最軟濺落、飛船完整（S40 其後拖至聖誕島回收）。</li>
-        <li><b>F14 新做</b>：近地點抬升 → <b>穩定軌道</b> → V3 留在軌。</li>
-        <li><b>F14 明確不做</b>：S41 塔捕（Musk 8/20 延後數月；主因 FAA 著陸安全區，L2）。</li>
-        <li><b>9/28 實際</b>：入軌與部署達成；圈數與落區改到夏威夷以北；濺落後側翻。</li>
+        <li><b>載荷顆數：</b>沒有官方數字。不要把 F14 的 26× V3 抄過來。</li>
+        <li><b>推進劑轉移：</b>Space.com 說「最早 F15 試船對船加注」只是推測，要等官方任務說明。Wikipedia 另有「對接／艙門機構可能開始試」的轉述，同樣不是任務書。</li>
+        <li><b>落區：</b>助推器與 S42 都是 TBA。F14 的夏威夷以北是備援濺落區，不是 F15 的計畫落點。</li>
       </ul>
     </div>
   </div>
 </div>
 
-<div class="obj">
-  <div class="obox">
-    <h4>① 助推器 B21 — 升空後任務</h4>
-    <ul>
-      <li>升空、爬升、熱分離</li>
-      <li>返航點火（boostback）— 爭取全 33 台乾淨</li>
-      <li>著陸點火 · <b>墨西哥灣軟濺落</b>（預期）</li>
-      <li>塔捕：本飛<b>不做</b></li>
-    </ul>
-  </div>
-  <div class="obox">
-    <h4>② 飛船 S41 — 升空後任務（重點）</h4>
-    <ul>
-      <li>分離後<b>入軌</b>（近地點抬升）</li>
-      <li>26× Starlink V3 <b>入軌部署</b>（運營軌道）</li>
-      <li>實際：約 3h08m · 夏威夷以北濺落（原計劃智利以西 ~10h）</li>
-      <li>塔捕：<b>延後數月</b>（不在本飛）</li>
-    </ul>
-  </div>
+<!-- ===== F14 scorecard ===== -->
+<h2>✅ F14 成績單（已結案）</h2>
+<p class="note">澳門 9/28 20:48（7:48 a.m. CT · <a href="https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-megarocket-flight-14-orbital-launch-success" target="_blank" rel="noopener">Space.com</a>）· B21 × S41 · Pad 2。對表 <a href="https://www.spacex.com/launches/starship-flight-14/" target="_blank" rel="noopener">SpaceX 飛行頁</a>與 <a href="https://en.wikipedia.org/wiki/Starship_flight_14" target="_blank" rel="noopener">Wikipedia</a>。時間線裡仍保留過程。</p>
+<div class="scroll"><table class="wide">
+  <thead><tr><th>項目</th><th>計劃</th><th>9/28 結果</th></tr></thead>
+  <tbody>
+    <tr><td class="metric-row">入軌</td><td style="text-align:left">首次穩定軌道</td><td style="text-align:left"><span class="pos-c">達成</span> · 上升段一具 Raptor Vacuum 提前關機，其餘五具加長燃燒；評估後仍執行入軌點火</td></tr>
+    <tr><td class="metric-row">載荷</td><td style="text-align:left">26× Starlink V3</td><td style="text-align:left"><span class="pos-c">26 顆全數部署</span></td></tr>
+    <tr><td class="metric-row">在軌</td><td style="text-align:left">約 6 圈／約 10 小時，智利以西濺落</td><td style="text-align:left"><span class="flat">約 3 小時 8 分</span> · 第一個應急檢查點後提前離軌；夏威夷以北是發射前就清空的備援區</td></tr>
+    <tr><td class="metric-row">飛船回收</td><td style="text-align:left">海上濺落，不做艦捕</td><td style="text-align:left">三具海平面 Raptor 著陸點火、對點濺落，隨即側翻、殘餘推進劑點火。本來就不回收</td></tr>
+    <tr><td class="metric-row">助推器</td><td style="text-align:left">墨西哥灣濺落，不做塔捕</td><td style="text-align:left">受控濺落。爬升掉 1 台；boostback 點燃 31／33；著陸高推力 11／計畫 13，再收到 5、再收到 3。熄火後觸發 FTS，當作安全硬體演示（SpaceX 摘要）</td></tr>
+    <tr><td class="metric-row">艦捕</td><td style="text-align:left">本飛明確不做</td><td style="text-align:left"><span class="flat">未做</span> · 兩級都是海上結尾</td></tr>
+  </tbody>
+</table></div>
+<div class="callout">
+  <b>帶進 F15 的教訓（L2）：</b>入軌和 V3 部署可以在掉一具上層級引擎後仍完成，但任務會被切短——Gizmodo 指出，再來一次就做不了塔捕。助推器整段飛行仍在掉 Raptor（爬升、boostback、著陸），NSF 9/30 把「這飛不要再掉引擎」寫成捕 B22 之前的功課。熱盾與著陸點火把船送到預定濺落點，側翻是不回收濺落之後的結尾，不是塔捕失敗。Raptor 3 已在 F12–F14 連續出過程度不一的引擎問題（Gizmodo），修不修得掉會直接吃掉復飛節奏。
 </div>
 
 <!-- ===== F13 recap (collapsed history) ===== -->
 <h2>✅ Flight 13 結果回顧（已結案）</h2>
 <div class="callout" style="border-color:rgba(34,197,94,.45);background:rgba(34,197,94,.08);color:#c5f0d0">
-  <b>F13 · 澳門 7/25 06:51（L1）：</b>B20×S40 · 33 台升空 · <b>20× Starlink V3 全數部署</b> · 太空重點火 · 印度洋最軟濺落／飛船完整 · B20 硬濺落（著陸部分點火）。<b>S40 8/18 拖至聖誕島</b>——史上首次上層級完整回收（L2）。為後續艦捕提供熱盾與再入數據基線（艦捕已不在 F14）。
+  <b>F13 · 澳門 7/25 06:51（L1）：</b>B20×S40 · 33 台升空 · <b>20× Starlink V3 全數部署</b> · 太空重點火 · 印度洋最軟濺落／飛船完整 · B20 硬濺落（著陸部分點火）。<b>S40 8/18 拖至聖誕島</b>——史上首次上層級完整回收（L2）。熱盾數據是後來談艦捕的基線；艦捕不在 F14，F15 也尚未官宣。
 </div>
 <details class="rec" style="margin:10px 0 16px;border:1px solid #283142;border-radius:12px;padding:12px 16px;background:#141923">
   <summary style="cursor:pointer;font-weight:800;color:#5b8def">展開 F13 硬件步驟條（B20／S40 已完成）</summary>
@@ -911,71 +911,70 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 </details>
 
 <!-- ===== Pipeline next hardware ===== -->
-<h2>📦 車隊管線 · 後續硬件</h2>
-<p class="note">F14 主飛是 <b>B21／S41</b>。以下追蹤更後序產能與歷史序號。</p>
+<h2>📦 車隊管線 · F15 之後</h2>
+<p class="note">F15 配對是 <b>B22／S42</b>。更後的序號只代表產線，<b>沒有被官方指派到某一飛</b>。L3 的 F16／39A（NET 10/30）是同一張 9/24 空域簡報，同樣 provisional，本頁不排進倒數。</p>
 <div class="vgrid">
   <div class="vcard pipe">
     <div class="vtop">
       <div class="vh">
         <div>
-          <div class="vn">B40 · Super Heavy</div>
-          <div class="vro">後續量產助推器 · 非 F14</div>
+          <div class="vn">B23 · Super Heavy</div>
+          <div class="vro">F15 之後的助推器產線 · 未指派飛行</div>
         </div>
-        <span class="badge wait">產線／待公開</span>
+        <span class="badge wait">產線</span>
       </div>
       <div class="vmeta">
-        <span class="vm">與 F14 <b>無關</b></span>
-        <span class="vm">現行主飛 <b>B21</b></span>
+        <span class="vm">F15 助推器 <b>B22</b></span>
+        <span class="vm">F14 助推器 <b>B21 已飛</b></span>
       </div>
     </div>
     <table class="ptbl">
       <thead><tr><th>#</th><th>節點</th><th>狀態</th></tr></thead>
       <tbody>
-        <tr class="run"><td class="ph">1</td><td><span class="pst">產線排隊</span><div class="psd">序號朝 30→40 推進 · 量產節奏指標</div></td><td class="pstt">進行中</td></tr>
-        <tr class="todo"><td class="ph">2</td><td><span class="pst">Cryo／靜火</span><div class="psd">尚未進入 F14 同級公開窗口</div></td><td class="pstt">待定</td></tr>
-        <tr class="todo"><td class="ph">3</td><td><span class="pst">指派飛行</span><div class="psd">可能 F15+ · 待官方</div></td><td class="pstt">待定</td></tr>
+        <tr class="run"><td class="ph">1</td><td><span class="pst">堆疊進行中</span><div class="psd">NSF 8 月：B22 與 B23 都在堆。B23 沒有 cryo／靜火的 10/3 公開紀錄</div></td><td class="pstt">產線</td></tr>
+        <tr class="todo"><td class="ph">2</td><td><span class="pst">指派飛行</span><div class="psd">不是 F15。不要把口語裡的 B40 當成這一級</div></td><td class="pstt">未定</td></tr>
       </tbody>
     </table>
-    <div class="vfoot">B 序號爬升＝助推器量產節奏，是「高頻發射」敘事的前置指標。</div>
+    <div class="vfoot">序號往上爬是產能指標。飛行指派以 NSF／Next Spaceflight 對上官方任務頁為準。</div>
   </div>
   <div class="vcard pipe">
     <div class="vtop">
       <div class="vh">
         <div>
-          <div class="vn">S42+ · 後續飛船</div>
-          <div class="vro">S41 之後的上層級管線</div>
+          <div class="vn">S43+ · 後續飛船</div>
+          <div class="vro">S42 之後的上層級 · 未指派 F15</div>
         </div>
         <span class="badge wait">產線</span>
       </div>
       <div class="vmeta">
-        <span class="vm">現行主飛 <b>S41</b></span>
-        <span class="vm">F13 飛船 <b>S40 已飛</b></span>
+        <span class="vm">F15 飛船 <b>S42</b></span>
+        <span class="vm">F14 飛船 <b>S41 已飛</b></span>
       </div>
     </div>
     <table class="ptbl">
       <thead><tr><th>#</th><th>節點</th><th>狀態</th></tr></thead>
       <tbody>
-        <tr class="done"><td class="ph">1</td><td><span class="pst">S41 已飛</span><div class="psd">F14 主飛 · 9/28 入軌＋26× V3 · 見上方卡片</div></td><td class="pstt">已飛</td></tr>
-        <tr class="todo"><td class="ph">2</td><td><span class="pst">S42／後續</span><div class="psd">艦捕成功後加速迭代預期</div></td><td class="pstt">待定</td></tr>
-        <tr class="done"><td class="ph">3</td><td><span class="pst">S20 等早期序號</span><div class="psd">歷史世代 · 非本飛</div></td><td class="pstt">已過</td></tr>
+        <tr class="done"><td class="ph">1</td><td><span class="pst">S41 已飛</span><div class="psd">F14 · 9/28 入軌＋26× V3 · 見成績單</div></td><td class="pstt">已飛</td></tr>
+        <tr class="run"><td class="ph">2</td><td><span class="pst">S42 是下一艘</span><div class="psd">見上方 F15 卡片。S43 在 8 月已進入產線敘事，飛行未定</div></td><td class="pstt">F15</td></tr>
+        <tr class="todo"><td class="ph">3</td><td><span class="pst">更後序號</span><div class="psd">沒有官方 NET，也不在本頁倒數</div></td><td class="pstt">未定</td></tr>
       </tbody>
     </table>
-    <div class="vfoot">F14 的 S41 已飛。下一艘公開序號與 F15 窗口，SpaceX 尚未給 NET。</div>
+    <div class="vfoot">S42 已經從「後續管線」升成 F15 主飛。再後面的船不要提前寫成已排程。</div>
   </div>
 </div>
 
-<!-- ===== Checklist ===== -->
-<h2>📋 F14 檢查清單（飛行後對表）</h2>
+<!-- ===== F15 phase checklist ===== -->
+<h2>📋 F15 階段表</h2>
+<p class="note">對到 2026-10-03 的公開紀錄。完成才打勾；估計日期不打勾。</p>
 <div class="scroll"><table class="wide">
-  <thead><tr><th>門檻</th><th>狀態</th><th>說明</th></tr></thead>
+  <thead><tr><th>階段</th><th>狀態</th><th>依據</th></tr></thead>
   <tbody>
-    <tr><td class="metric-row">F13 任務數據覆核</td><td style="text-align:left"><span class="pos-c">熱盾「已解決」口徑</span></td><td style="text-align:left">8/4 Musk；艦捕改延後數月（8/20）</td></tr>
-    <tr><td class="metric-row">B21 cryo + 靜火</td><td style="text-align:left"><span class="pos-c">完成</span></td><td style="text-align:left">cryo 7/18–20；<b>33 機全時長靜火 8/28</b> Pad 2</td></tr>
-    <tr><td class="metric-row">S41 cryo + 靜火</td><td style="text-align:left"><span class="pos-c">完成</span></td><td style="text-align:left">cryo 6/30；單機 8/19＋<b>六機 60s 8/21</b>（SpaceX 官方）</td></tr>
-    <tr><td class="metric-row">艦捕（Mechazilla）</td><td style="text-align:left"><span class="flat">本飛不做</span></td><td style="text-align:left">Musk 8/20：probably a few months；FAA 安全區（L2）</td></tr>
-    <tr><td class="metric-row">FAA／空域</td><td style="text-align:left"><span class="pos-c">已飛</span></td><td style="text-align:left">9/2 EA／FONSI 之後，9/28 實際升空。執照修改細節以官網飛行頁為準</td></tr>
-    <tr><td class="metric-row">T-0</td><td style="text-align:left"><span class="pos-c">9/28 07:48 CT</span></td><td style="text-align:left">Space.com：8:48 a.m. EDT／12:48 UTC＝澳門 20:48。Spaceflight Now 寫 8:49 a.m. EDT，差約 1 分鐘</td></tr>
-    <tr><td class="metric-row">載荷（V3）</td><td style="text-align:left"><span class="pos-c">26 顆已部署</span></td><td style="text-align:left">入軌後全部放出；Space.com：約 T+34 分起、持續約 30 分鐘</td></tr>
+    <tr><td class="metric-row">硬件就緒</td><td style="text-align:left"><span class="flat">進行中</span></td><td style="text-align:left">主結構與 cryo 已做。9/30 兩級仍在 Mega Bay 裝 Raptor，還沒到「可飛」</td></tr>
+    <tr><td class="metric-row">靜火</td><td style="text-align:left"><span class="flat">未做</span></td><td style="text-align:left">截至 10/3 無 B22／S42 靜火完成紀錄。NSF 9/30：助推器約兩週、飛船約兩到三週可排——估計，不是已發生</td></tr>
+    <tr><td class="metric-row">堆疊</td><td style="text-align:left"><span class="flat">未做</span></td><td style="text-align:left">飛行全堆疊未公開。9/12 的筷子測試是 S42 單獨上塔</td></tr>
+    <tr><td class="metric-row">FAA 執照</td><td style="text-align:left"><span class="flat">未涵蓋 F15</span></td><td style="text-align:left">Order A-2 只授權 F14 再入。F15 要另改執照。未見側翻觸發新的 mishap 公告</td></tr>
+    <tr><td class="metric-row">發射</td><td style="text-align:left"><span class="flat">未公布</span></td><td style="text-align:left">官網無 NET，倒數關閉。L3：CADENA／ATCSCC 曾標 10/19，不採用</td></tr>
+    <tr><td class="metric-row">目標</td><td style="text-align:left"><span class="flat">未官宣</span></td><td style="text-align:left">預期再入軌。載荷顆數、落區、艦捕、助推器塔捕、船對船加注都還沒有任務書</td></tr>
   </tbody>
 </table></div>
 
@@ -1001,10 +1000,14 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
   <div class="ev big"><span class="ed">9/15</span><span class="et">SpaceX 官網：F14 窗口改 <b>9/22 07:15 CT</b>（原 NET 9/15 滑移）· 26× V3 · ~6 圈 · 太平洋濺落</span></div>
   <div class="ev big"><span class="ed">9/16</span><span class="et">SPCX 收 <b>$150.88</b>（+5.15% vs $143.49）· 市值 ~2.0 兆 · 重回 $150 上方</span></div>
   <div class="ev big"><span class="ed">9/16–20</span><span class="et">Falcon：USSF-259 升空（Vandenberg）· Starlink 15-27（9/19 PDT／9/20 01:47 UTC，B1093 第 17 次、OCISLY 回收）· 家族 YTD ~109</span></div>
+  <div class="ev"><span class="ed">9/3–10</span><span class="et">F15 硬件 cryo：S42 於 9/3–4、B22 於 9/9–10 在 Massey’s 做低溫證明（Next Spaceflight／NSF）</span></div>
+  <div class="ev big"><span class="ed">9/12</span><span class="et">S42（尚未裝飛行引擎）在 Pad 2 做筷子／快速斷開演練，之後回產線裝引擎。B22 同日前後滾回 MB-1</span></div>
+  <div class="ev big"><span class="ed">9/14</span><span class="et">Musk（All-In）：若 F14 順利，F15 <b>可能</b>嘗試艦捕；第一次成功率口述至少 50–60%。不是任務書</span></div>
   <div class="ev big"><span class="ed">9/17</span><span class="et">SpaceX：F14 改盯 <b>NET 9/28</b> pending FAA（原 9/22 再滑 6 日；未給公開原因）· SPCX 收 $154.81（+2.6%）</span></div>
   <div class="ev big"><span class="ed">9/18</span><span class="et">SPCX 收 <b>$152.71</b>（−1.36%；量 3.35 億≈3.8×均量）· 盤後 $152.64 · 市值 ~2.01 兆</span></div>
-  <div class="ev big"><span class="ed">9/24</span><span class="et"><b>Day-105 鎖倉</b>最多約 3.284 億股變為可賣。收 <b>$148.03</b>（9/23 $148.36，約 −0.2%）</span></div>
-  <div class="ev big"><span class="ed">9/28 20:48 澳門</span><span class="et"><b>Flight 14 已飛</b> · 首次入軌 + 26× V3 · 任務縮至約 3h08m · 夏威夷以北濺落後側翻。當日 SPCX 收 $145.47</span></div>
+  <div class="ev big"><span class="ed">9/24</span><span class="et"><b>Day-105 鎖倉</b>最多約 3.284 億股變為可賣。收 <b>$148.03</b>（9/23 $148.36，約 −0.2%）。同日 NSF 轉貼 CADENA：F15 NET 10/19（<b>L3，super provisional</b>）</span></div>
+  <div class="ev big"><span class="ed">9/28 20:48 澳門</span><span class="et"><b>Flight 14 已飛</b> · 首次入軌 + 26× V3 · 任務縮至約 3h08m · 夏威夷以北濺落後側翻。當日 SPCX 收 $145.47。此後不再當「下一發」</span></div>
+  <div class="ev big"><span class="ed">9/30</span><span class="et">NSF：B22 與 S42 在各自 Mega Bay <b>裝 Raptor</b>。靜火仍在後面；飛行就緒「或到 10 月底」是估計。執照仍只涵蓋 F14</span></div>
   <div class="ev big"><span class="ed">10/1–2</span><span class="et">Falcon Heavy <b>NROL-97</b>（10/1 23:54 ET）· 同日另有 Crew-13 與 Transporter-13。家族 YTD ~113</span></div>
   <div class="ev big"><span class="ed">10/2</span><span class="et">SPCX 收 <b>$158.96</b>（+7.35% vs $148.07）· 市值約 <b>2.10 兆</b></span></div>
   <div class="ev"><span class="ed">10/9 · 10/24</span><span class="et">下一檔鎖倉仍各最多約 3.284 億股。10/24 為週六，首個交易日 10/26</span></div>
@@ -1035,8 +1038,10 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
   <div class="crow"><div class="cd">9/9–10</div><div class="ce">第三檔鎖倉已解禁 · 9/9 收 $147.55（−3.9%）</div><div class="cs" style="color:#22c55e">已發生</div></div>
   <div class="crow"><div class="cd">9/17</div><div class="ce">SpaceX：F14 改盯 <b>NET 9/28</b>（原 9/22 再滑）</div><div class="cs" style="color:#22c55e">已發生</div></div>
   <div class="crow"><div class="cd">9/24</div><div class="ce">Day-105 鎖倉已解禁 · 收 $148.03（約 −0.2%）</div><div class="cs" style="color:#22c55e">已發生</div></div>
-  <div class="crow"><div class="cd">9/28</div><div class="ce"><b>F14 已飛</b> · 入軌 + 26× V3 · 約 3 小時後北太平洋濺落</div><div class="cs" style="color:#22c55e">已發生</div></div>
+  <div class="crow"><div class="cd">9/28</div><div class="ce"><b>F14 已飛</b> · 入軌 + 26× V3 · 約 3 小時後北太平洋濺落 · 成績單見上</div><div class="cs" style="color:#22c55e">已發生</div></div>
   <div class="crow"><div class="cd">8/14</div><div class="ce">Cursor／Anysphere <b>$60B 已交割</b>（本頁先前仍寫待 Q3）</div><div class="cs" style="color:#22c55e">已發生</div></div>
+  <div class="crow"><div class="cd">F15</div><div class="ce"><b>下一重大發射</b> B22 × S42 · Pad 2 · NET <b>未公布</b>（不倒數）。靜火、堆疊、執照修改都未完成</div><div class="cs" style="color:#f5b942">未公布</div></div>
+  <div class="crow"><div class="cd">L3</div><div class="ce">CADENA／ATCSCC 曾標 F15 NET <b>10/19</b>。空域簡報，不是 SpaceX 窗口，本頁不採用</div><div class="cs" style="color:#94a3b8">不採用</div></div>
   <div class="crow"><div class="cd">10/9</div><div class="ce">下一檔鎖倉最多約 <b>3.284 億</b>股（Day 120）</div><div class="cs" style="color:#ef4444">供給</div></div>
   <div class="crow"><div class="cd">10/24</div><div class="ce">再一檔最多約 3.284 億股 · 週六，首個交易日 <b>10/26</b></div><div class="cs" style="color:#ef4444">供給</div></div>
   <div class="crow"><div class="cd">~11/3</div><div class="ce">SPCX Q3 財報<b>仍是估計</b>（Yahoo／days.to，未官宣）</div><div class="cs" style="color:#f5b942">估計</div></div>
@@ -1044,11 +1049,12 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 </div>
 
 <div class="callout">
-  <b>怎麼用這頁：</b>① 頂部時鐘是 <b>F14 升空後經過</b>，不是下一發倒數；② B21／S41 步驟已結案，讀「入軌達成、圈數沒飛完」；③ 剖面對表計劃落區 vs 夏威夷以北；④ 檢查清單；⑤ F13 回收可折疊；⑥ 下一供給是 <b>10/9 與 10/24 鎖倉</b>。下一發 NET 以 SpaceX 官網為準，本頁不臆造。
+  <b>怎麼用這頁：</b>① 頂部是 <b>F15 狀態「未公布」</b>，沒有倒數；② 讀 B22／S42：cryo 與塔測已做，靜火和飛行堆疊還沒有；③ 目標欄把「再入軌」和「艦捕未確認」分開；④ F14 只看成績單（入軌與 26× V3 達成，圈數沒飛完，無艦捕）；⑤ 下一檔供給是 <b>10/9 與 10/24 鎖倉</b>，財報估計 ~11/3。L3 的 10/19 不是窗口。
 </div>
 
 <div class="changelog">
   <b>本頁變更</b>
+  <div class="cl-item"><span class="cl-d">2026-10-03</span> 主敘事改 <b>F15 準備</b>（B22 × S42，NET 未公布，倒數關閉）。F14 收成成績單。階段表：cryo 已做、靜火／堆疊／執照／目標未完成</div>
   <div class="cl-item"><span class="cl-d">2026-10-03</span> F14 <b>已飛</b>（入軌＋26× V3，任務縮短）；SPCX 10/2 <b>$158.96</b>（+7.35% · ~2.10 兆）；9/24 鎖倉約 −0.2%；下一檔 10/9、10/24；Falcon YTD ~113；Cursor 交割日更正為 8/14</div>
   <div class="cl-item"><span class="cl-d">2026-09-20</span> SPCX 9/18 <b>$152.71</b>（盤後 $152.64 · ~2.01 兆）；F14 改盯 NET <b>9/28</b>；9/24 鎖倉提前於 F14；Falcon YTD ~109（9/20 Starlink 15-27）；9/9 鎖倉 −3.9% 後反彈</div>
   <div class="cl-item"><span class="cl-d">2026-09-17</span> SPCX 9/16 <b>$150.88</b>（~2.0 兆）；F14 官網窗口 <b>9/22</b>（原 NET 9/15 滑）；9/9 鎖倉 −3.9%；Falcon YTD ~107（9/13）；26× V3；下一檔 9/24</div>
@@ -1065,7 +1071,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 <footer>
   <b>資料來源．</b><span class="ly L1">L1</span> <a href="https://www.spacex.com/launches/starship-flight-13" target="_blank" rel="noopener">SpaceX F13</a>、<a href="https://ir.spacex.com/" target="_blank" rel="noopener">Q2'26 IR</a>、Musk 8/4 電話會；
   <span class="ly L2">L2</span> NSF／Spaceflight Now／nextspaceflight、CNBC／Reuters。
-  F14 飛行結果以 Space.com／Spaceflight Now 對表官網飛行頁（索引可見 7:48 a.m. CT、入軌、26× V3、縮短任務、北太平洋濺落）。<b>免責：</b>個人研究筆記，非投資建議。更新 2026-10-03。
+  F15 硬件與「無官方 NET」：<a href="https://www.nasaspaceflight.com/2026/09/flight-15-pairing-masseys/" target="_blank" rel="noopener">NSF 9/9</a>、<a href="https://en.wikipedia.org/wiki/Starship_flight_15" target="_blank" rel="noopener">Wikipedia F15</a>、<a href="https://www.space.com/space-exploration/launches-spacecraft/starship-just-reached-orbit-for-the-1st-time-whats-next-for-the-spacex-megarocket" target="_blank" rel="noopener">Space.com 9/29</a>、<a href="https://gizmodo.com/starship-has-finally-gone-orbital-now-comes-the-hard-part-2000818803" target="_blank" rel="noopener">Gizmodo 9/29</a>。9/30 裝引擎狀態見 NSF 同題報導（Ryan Weber；公開轉載 <a href="https://interspaceskyway.com/2026/09/30/starship-makes-orbit-flight-15-preps-in-full-swing/" target="_blank" rel="noopener">Inter Space Sky Way</a>）。F14 結果對表 <a href="https://www.spacex.com/launches/starship-flight-14/" target="_blank" rel="noopener">SpaceX</a>／Space.com。執照範圍見 <a href="https://www.nasaspaceflight.com/2026/09/starship-flight-14-orbit/" target="_blank" rel="noopener">NSF F14 預覽</a>。<b>免責：</b>個人研究筆記，非投資建議。更新 2026-10-03。
 </footer>
 </div><!-- /viewN -->
 
@@ -1253,10 +1259,10 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 </table></div>
 <p class="note">＊估算來源：Sacra、Payload、Morgan Stanley 等上市前研究；實際為 SpaceX S-1（2026/5/20）。2026 為分析師區間，離散極大（Morningstar 368 億至保守 238 億美元）。</p>
 <div class="callout warn">
-  <b>Q2 2026 已公佈（L1 IR · 美 8/4 盤後）：</b>總營收 <b>78.14 億</b>（+92% YoY）vs 共識 ~69 億；Space 9.62／Connectivity <b>42.91</b>（+66% YoY，營業利潤 16.56）／AI <b>25.61</b>（+247% YoY，營業虧 −12.57，Adj EBITDA 轉正 +11.5）。淨虧 <b>5.41 億</b>（EPS −$0.09 優於 −$0.26）；Adj EBITDA <b>35.4 億</b>（+191%）。<b>CapEx 183.7 億</b>（AI 158.3）為市場焦點——CFO：AI 回本期 &lt;1 年、下兩季 capex 類似；現金及約當～<b>935–1,000 億</b>（含 IPO）。訂戶 <b>12.0M</b> L1 季末（+1.7M QoQ）、ARPU $66 持平。Starshield 多年約 &gt;$60 億。Musk：YE26 衝 <b>$100B ARR</b> 節奏；Nvidia 獨家算力＋軌道 Starmind。<b>股價（更新）：</b>8/7 $133.11 → 8/12 $146.15（+9.7%）→ 8/20 第二檔鎖倉收 $134（−4%）→ 8/25 Louisiana 宣布 → 8/31 收 <b>$143.69</b>（市值約 <b>1.86 兆</b> L2），站穩 IPO $135 上方。52 週低 $104.83（8/3）。<b>其後（10/3 更新）：</b>F14 已於 9/28 入軌（任務縮短）；9/24 鎖倉當日約 −0.2% 至 $148.03；下一檔 10/9 與 10/24；10/2 收 <b>$158.96</b>（市值約 2.10 兆）。Cursor $60B 已於 8/14 交割。
+  <b>Q2 2026 已公佈（L1 IR · 美 8/4 盤後）：</b>總營收 <b>78.14 億</b>（+92% YoY）vs 共識 ~69 億；Space 9.62／Connectivity <b>42.91</b>（+66% YoY，營業利潤 16.56）／AI <b>25.61</b>（+247% YoY，營業虧 −12.57，Adj EBITDA 轉正 +11.5）。淨虧 <b>5.41 億</b>（EPS −$0.09 優於 −$0.26）；Adj EBITDA <b>35.4 億</b>（+191%）。<b>CapEx 183.7 億</b>（AI 158.3）為市場焦點——CFO：AI 回本期 &lt;1 年、下兩季 capex 類似；現金及約當～<b>935–1,000 億</b>（含 IPO）。訂戶 <b>12.0M</b> L1 季末（+1.7M QoQ）、ARPU $66 持平。Starshield 多年約 &gt;$60 億。Musk：YE26 衝 <b>$100B ARR</b> 節奏；Nvidia 獨家算力＋軌道 Starmind。<b>股價（更新）：</b>8/7 $133.11 → 8/12 $146.15（+9.7%）→ 8/20 第二檔鎖倉收 $134（−4%）→ 8/25 Louisiana 宣布 → 8/31 收 <b>$143.69</b>（市值約 <b>1.86 兆</b> L2），站穩 IPO $135 上方。52 週低 $104.83（8/3）。<b>其後（10/3 更新）：</b>F14 已於 9/28 入軌（任務縮短）；下一發改為 <b>F15（NET 未公布）</b>。9/24 鎖倉當日約 −0.2% 至 $148.03；下一檔 10/9 與 10/24；10/2 收 <b>$158.96</b>（市值約 2.10 兆）。Cursor $60B 已於 8/14 交割。
 </div>
 <div class="take">
-  <b>連續解讀．</b>首份公開季報驗證「驚喜」：營收／訂戶／AI 虧損收斂皆優於共識；市場用 <b>CapEx 183 億</b>重新定價「成長代價」。到 10/3：F14 <b>入軌達成但沒飛完剖面</b>；9/24 鎖倉幾乎平盤；股價在發射日收到 $145.47 後，10/2 收到 <b>$158.96</b>。下一檔供給是 10/9 與 10/24。<u>營收故事仍在；資本開支、剩餘鎖倉與艦捕能不能做，是下一章。</u>
+  <b>連續解讀．</b>首份公開季報驗證「驚喜」：營收／訂戶／AI 虧損收斂皆優於共識；市場用 <b>CapEx 183 億</b>重新定價「成長代價」。到 10/3：F14 <b>入軌達成但沒飛完剖面</b>；下一發是 <b>F15（B22 × S42，NET 未公布）</b>，艦捕尚未官宣。9/24 鎖倉幾乎平盤；股價在發射日收到 $145.47 後，10/2 收到 <b>$158.96</b>。下一檔供給是 10/9 與 10/24，財報估計 ~11/3。<u>營收故事仍在；資本開支、剩餘鎖倉，以及 F15 能不能在引擎與 FAA 修改之後嘗試艦捕，是下一章。</u>
 </div>
 
 <h3>2.1 營收與業務分部（年度折線，億美元）</h3>
@@ -1289,7 +1295,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
     <tr class="biz" style="--bc:#5b8def"><td>🚀 ② Space／發射服務 <span class="ly L1">L1</span></td><td>營收 41 · 165 發</td><td><b>9.62 億</b>（+29% YoY）· Q2 38 發（客 10／內 28）· H1 78 發 · YTD ~113</td><td>對外單價 · 艦捕</td></tr>
     <tr><td class="sub">發射服務收入 <span class="ly L1">L1</span></td><td>—</td><td>6.48 億（客戶發射）</td><td>市佔 vs New Glenn</td></tr>
     <tr><td class="sub">發射與開發收入 <span class="ly L1">L1</span></td><td>—</td><td>3.14 億</td><td>HLS 里程碑</td></tr>
-    <tr><td class="sub">Starship（研發中）</td><td>0</td><td><b>F13 成功</b>；<b>F14 9/28 已入軌</b>＋26× V3，任務縮短；艦捕仍未做</td><td>下一飛／艦捕</td></tr>
+    <tr><td class="sub">Starship（研發中）</td><td>0</td><td><b>F13 成功</b>；<b>F14 9/28 已入軌</b>＋26× V3，任務縮短；艦捕未做</td><td>下一發 F15 · NET 未公布</td></tr>
     <tr><td class="sub">內部自用（部署 Starlink）</td><td>—</td><td>Q2 內部 28 發／397t</td><td>V3 上 Starship</td></tr>
     <tr class="biz" style="--bc:#f5b942"><td>🤖 ③ AI 段 xAI／Grok／X <span class="ly L1">L1</span></td><td>營收 32 · 營業虧損 −64</td><td><b>25.61 億</b>（+247% YoY）· 營業虧 <b>−12.57</b>（收斂 49%）· Adj EBITDA <b>+11.5</b></td><td>Cursor 已交割 · 算力回報</td></tr>
     <tr><td class="sub">AI 方案＋基建租賃 <span class="ly L1">L1</span></td><td>0</td><td><b>21.94 億</b>（雲服務協議貢獻增量 ~16 億）</td><td>Google 10 月全額</td></tr>
@@ -1435,12 +1441,12 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
   </div>
 </div>
 <div class="take">
-  <b>連續解讀．</b>估值階梯：IPO ~1.75 兆（$135）→ 高點 ~2.2 兆（$226）→ 8/3 低 $104.83 → 8/31 $143.69 → 9/18 $152.71（約 2.01 兆）→ <b>10/2 收 $158.96（Markets Daily 市值約 2.10 兆）</b>。須認清：(1) SpaceX-xAI-X 綜合體；(2) Q2 仍 GAAP 淨虧 5.4 億；(3) 雙重股權；(4) <b>10/9 與 10/24 鎖倉仍在前面</b>；(5) <b>AI CapEx 183 億／季仍是基本面定價核心</b>；(6) F14 入軌已發生，但引擎問題與艦捕未做仍會放大下一飛的波動。
+  <b>連續解讀．</b>估值階梯：IPO ~1.75 兆（$135）→ 高點 ~2.2 兆（$226）→ 8/3 低 $104.83 → 8/31 $143.69 → 9/18 $152.71（約 2.01 兆）→ <b>10/2 收 $158.96（Markets Daily 市值約 2.10 兆）</b>。須認清：(1) SpaceX-xAI-X 綜合體；(2) Q2 仍 GAAP 淨虧 5.4 億；(3) 雙重股權；(4) <b>10/9 與 10/24 鎖倉仍在前面</b>；(5) <b>AI CapEx 183 億／季仍是基本面定價核心</b>；(6) 下一飛是 <b>F15</b>：F14 入軌已發生，但引擎問題、執照修改與尚未官宣的艦捕，仍會放大這一發的波動。
 </div>
 
 <div class="changelog">
   <b>變更日誌</b>
-  <div class="cl-item"><span class="cl-d">2026-10-03</span> 股價 10/2 <b>$158.96</b>（+7.35% · 市值 ~2.10 兆）；F14 已入軌；9/24 鎖倉約 −0.2%；Falcon YTD ~113；Cursor 交割更正為 8/14；營收共識 128.4 億未改</div>
+  <div class="cl-item"><span class="cl-d">2026-10-03</span> 股價 10/2 <b>$158.96</b>（+7.35% · 市值 ~2.10 兆）；F14 已入軌，下一發改看 <b>F15（NET 未公布）</b>；9/24 鎖倉約 −0.2%；Falcon YTD ~113；Cursor 交割更正為 8/14；營收共識 128.4 億未改</div>
   <div class="cl-item"><span class="cl-d">2026-09-20</span> 股價 9/18 <b>$152.71</b>（盤後 $152.64 · 市值 ~2.01 兆）；F14 NET 9/28；Falcon YTD ~109；9/24 鎖倉提前於 F14</div>
   <div class="cl-item"><span class="cl-d">2026-09-17</span> 股價 9/16 <b>$150.88</b>（市值 ~2.0 兆）；9/9 鎖倉 −3.9%；F14 官網 9/22；Falcon YTD ~107；下一檔 9/24</div>
   <div class="cl-item"><span class="cl-d">2026-09-06</span> 股價 9/4 <b>$147.95</b>（市值 ~1.92 兆）；FAA EA／FONSI 9/2；F14 仍 NET 9/15；9/9 鎖倉；Falcon YTD ~104</div>
@@ -1619,7 +1625,7 @@ function initChartsS(){
 
 <div class="callout">
   <b>怎麼用：</b>卡片右上可切 <b>月／季／年</b>。<span class="ly L1">L1</span>：S-1／8-K／Q2'26 IR；較早季度序列多為 <span class="ly L3">L3</span>。<b>Fundamentals 更新需人工勾稽官方文件</b>。<br>
-  <span class="note">＊更新至 2026-10-03（澳門時間）。Tesla Q3 產銷已 L1；營收／EPS 待 10/21。NHTSA 期限已過、未見公開回覆。F14 已入軌。SPCX 美 10/2 收 $158.96；TSLA 美 10/2 收 $370.59。請當趨勢框架。</span>
+  <span class="note">＊更新至 2026-10-03（澳門時間）。Tesla Q3 產銷已 L1；營收／EPS 待 10/21。NHTSA 期限已過、未見公開回覆。F14 已入軌；下一發為 F15（NET 未公布）。SPCX 美 10/2 收 $158.96；TSLA 美 10/2 收 $370.59。請當趨勢框架。</span>
 </div>
 
 <h2>💰 SpaceX 財務匯總</h2>
@@ -1909,9 +1915,10 @@ function showView(v){
 }
 /* ===== VIEW N — Starship countdown + news ===== */
 var NEWS_N=[
+  {d:'2026-10-03',t:'追蹤切到 Flight 15：B22 × S42，NET 未公布',b:'SpaceX 發射索引仍停在 F14，沒有 F15 任務頁，本頁不倒數。硬體：S42 cryo 9/3–4、B22 cryo 9/9–10；9/12 S42 在 Pad 2 做筷子演練時還沒裝飛行引擎。NSF 9/30：兩級在 Mega Bay 裝 Raptor，靜火與飛行堆疊沒有完成紀錄，執照仍只涵蓋 F14。艦捕是 Musk 9/14 的條件式說法（F14 順利才考慮，口述成功率至少 50–60%），公司其後未重確認。載荷顆數未公布。L3：CADENA／ATCSCC 的 NET 10/19 不當窗口。',tags:['ss','imp'],src:'NSF / Space.com / Wikipedia L2 · CADENA L3'},
   {d:'2026-10-03',t:'SPCX 美 10/2 收 $158.96（+7.35%）· 市值約 2.10 兆 · 週末休市',b:'前收 10/1 $148.07。當日區間約 $149.34–$159.84，量約 1.19 億股（Cryptonomist／Markets Daily）。Markets Daily 寫市值 $2.10 兆。10/3 美股休市。Q3 訂戶仍無新 L1，維持 1,200 萬。',tags:['biz','imp'],src:'Cryptonomist / Markets Daily L2'},
   {d:'2026-10-02',t:'Falcon 家族 YTD ~113：F9 110＋FH 3（NROL-97）',b:'nextlaunch.today（截至 10/3，Launch Library 2）：Falcon 9 今年 110 次。SpaceNexus：Falcon Heavy 今年 3 次、最近一次 10/2。SpaceX：NROL-97 於 10/1 23:54 ET 自 LC-39A 升空，兩具側助推器落 LZ-1／LZ-2。Spaceflight Now：同日另有 Crew-13 與 Transporter-13，是一天內第三發 Falcon。KeepTrack 把 F9 計成 111，本頁標題用 113，並標 113–114 的分歧。',tags:['ops','imp'],src:'nextlaunch / SpaceX / Spaceflight Now L1–L2'},
-  {d:'2026-09-28',t:'Flight 14：首次入軌、26× V3，任務約 3 小時結束',b:'Space.com：7:48 a.m. CT（澳門 20:48）自 Pad 2 升空。爬升時上層級六具之一提前關機，直播一度說達不到軌道，數分鐘後改「go for orbit」。約 T+25 分單機入軌，約 T+34 分起部署 26 顆 V3。原計劃約 6 圈、9 小時 50 分後智利以西濺落；實際約 3 小時 8 分在夏威夷以北受控濺落，隨即側翻、殘餘推進劑點火。助推器墨西哥灣濺落。Musk 在 X 稱首次入軌成功。當日 SPCX 收 $145.47（9/25 收 $148.68，約 −2.2%）。艦捕仍未做，下一發 NET 未公布。',tags:['ss','imp'],src:'Space.com / Spaceflight Now L2'},
+  {d:'2026-09-28',t:'Flight 14：首次入軌、26× V3，任務約 3 小時結束',b:'Space.com：7:48 a.m. CT（澳門 20:48）自 Pad 2 升空。爬升時上層級六具之一提前關機，直播一度說達不到軌道，數分鐘後改「go for orbit」。約 T+25 分單機入軌，約 T+34 分起部署 26 顆 V3。原計劃約 6 圈、9 小時 50 分後智利以西濺落；實際約 3 小時 8 分在夏威夷以北受控濺落，隨即側翻、殘餘推進劑點火。助推器墨西哥灣濺落。Musk 在 X 稱首次入軌成功。當日 SPCX 收 $145.47（9/25 收 $148.68，約 −2.2%）。艦捕未做。此飛已結案；下一發改看 F15，NET 仍未公布。',tags:['ss','imp'],src:'Space.com / Spaceflight Now L2'},
   {d:'2026-09-24',t:'Day-105 鎖倉：最多約 3.284 億股 · 當日約 −0.2%',b:'Yahoo／Mizuho：9/24 最多 328.4 百萬股解禁，按 9/23 收盤 $148.36 名義約 $487 億；成為可賣≠一定賣。Smart Investors Daily：9/24 收 $148.03。下一檔仍是 10/9 與 10/24（The Financial Sciences：10/24 為週六，首個交易日 10/26），各最多約 3.284 億。Q3 財報後第二個完整交易日還有更大一檔，日期未定。',tags:['biz','imp'],src:'Yahoo / lockup calendar L2'},
   {d:'2026-09-22',t:'247 Wall St：Nasdaq-100 9 月再平衡後 SPCX 權重逾倍',b:'該文稱被動資金按公式加碼，並提到 10 月下旬還有解禁。GuruFocus 9/19 的「約 1.28%→2.82%」是事前估算，本輪沒有指數商的精確權重可對，不把該百分比改寫成已完成事實。',tags:['biz'],src:'247 Wall St L2'},
   {d:'2026-08-14',t:'更正：Cursor／Anysphere $60B 已於 8/14 交割',b:'本頁 9/20 快照仍寫「待 Q3 交割」。Yahoo／TNW：SEC 申報顯示 8/14 生效，Cursor 股東合計取得 3.8929 億股 SPCX（隱含權益 $600 億、以交割前七個交易日 VWAP 計）。交割日本身早於 9/20，此條是訂正，不是 9 月新事件。',tags:['biz','imp'],src:'Yahoo / TNW / SEC L1–L2'},
@@ -1990,25 +1997,10 @@ function initNewsN(){
       renderNewsN(b.getAttribute('data-f'));
     });
   }
-  // F14 liftoff 2026-09-28 07:48 CT (CDT=UTC-5) = 12:48 UTC = 20:48 Macau (Space.com). Elapsed since result, not a NET countdown.
-  var liftoff=Date.UTC(2026,8,28,12,48,0);
-  function tick(){
-    var now=Date.now(),diff=now-liftoff;
-    var lbl=document.getElementById('cdLbl');
-    function set(id,v){var e=document.getElementById(id);if(e)e.textContent=v;}
-    if(diff<0){
-      set('cdD','0');set('cdH','0');set('cdM','0');set('cdS','0');
-      if(lbl)lbl.textContent='升空時點尚未到（檢查時鐘）';
-      return;
-    }
-    var s=Math.floor(diff/1000),d=Math.floor(s/86400);s%=86400;
-    var h=Math.floor(s/3600);s%=3600; var m=Math.floor(s/60);s%=60;
-    set('cdD',d);set('cdH',('0'+h).slice(-2));set('cdM',('0'+m).slice(-2));set('cdS',('0'+s).slice(-2));
-    if(lbl)lbl.textContent='F14 已飛 · 首次入軌 · 9/28 20:48 澳門';
-  }
-  tick();
-  if(window._f13cd) clearInterval(window._f13cd);
-  window._f13cd=setInterval(tick,1000);
+  // F15 has no SpaceX NET as of 2026-10-03. Do not start a countdown.
+  if(window._f13cd){clearInterval(window._f13cd);window._f13cd=null;}
+  var lbl=document.getElementById('cdLbl');
+  if(lbl)lbl.textContent='未公布';
 }
 /* ===== VIEW A — Tesla AI news ===== */
 var NEWS_A=[
