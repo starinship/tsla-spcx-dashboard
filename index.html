@@ -453,12 +453,12 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
   <div class="tabbtn" id="btnT" onclick="showView('T')">
     <div class="ic">🚗</div>
     <div><div class="t1">Tesla 逐季深度</div>
-    <div class="t2">Q3 營收 280 億 · EPS $0.48 · 股價 $397</div></div>
+    <div class="t2">Q4 成績單待公布 · Q3 營收 280 億 · $397</div></div>
   </div>
   <div class="tabbtn" id="btnS" onclick="showView('S')">
     <div class="ic">🚀</div>
     <div><div class="t1">SpaceX 逐季深度</div>
-    <div class="t2">Q3 營收 146 億 · 首季轉盈 · SPCX $140</div></div>
+    <div class="t2">Q4 成績單待公布 · Q3 營收 146 億 · $140</div></div>
   </div>
 </div>
 
@@ -1152,13 +1152,13 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 <div class="view viewB viewT" id="viewT">
 <div class="kicker">Tesla · Quarterly Deep Dive · 逐季深度</div>
 <p style="font-size:23px;font-weight:800;margin:8px 0 4px">🚗 特斯拉 Tesla（TSLA）逐季深度</p>
-<div class="note">財務 9 個季度（Q3 2024 → Q3 2026）8-K／IR ｜ <b>Q3'26 產銷＋財報皆已公佈</b>（產銷 10/2、財報 10/21）｜ 頂部成績單：交付／儲能／營收／EPS／非 GAAP 淨利皆填實際</div>
+<div class="note">財務 9 個季度（Q3 2024 → Q3 2026）8-K／IR ｜ <b>Q3'26 產銷＋財報皆已公佈</b>（產銷 10/2、財報 10/21），實際留在下方逐季 ｜ 頂部成績單已改看 <b>Q4'26 預期</b>（實際待公布）</div>
 
-<!-- ============ 頂部：下一季預期 vs 實際（發佈後把「實際/差異」欄填上即可一目了然） ============ -->
+<!-- ============ 頂部：下一季預期 vs 實際（季報公布後只改 actual） ============ -->
 <div class="expect">
-  <div class="ehead"><div class="t">⏭️ Q3 2026 預期 vs 實際</div><div class="d" id="esumT"></div></div>
+  <div class="ehead"><div class="t">⏭️ Q4 2026 預期 vs 實際</div><div class="d" id="esumT"></div></div>
   <div class="egrid" id="egridT"></div>
-  <p class="note">有實際值的卡：綠＝超預期、紅＝遜預期。<b>10/2 產銷（L1）：</b>交付 <b>486,532</b>（超共識 461,974）、產量 <b>464,391</b>、儲能 <b>13.7 GWh</b>（遜共識 15.9）。<b>10/21 財報（L1 Exhibit 99.1）：</b>總營收 <b>$28.046B</b>（280.5 億，略遜共識 $28.341B）、非 GAAP EPS <b>$0.48</b>（超共識 $0.45）、非 GAAP 淨利 <b>$1.697B</b>、GAAP 淨利 <b>$787M</b>／EPS <b>$0.22</b>、毛利率 <b>19.6%</b>、OCF <b>$6.263B</b>、CapEx <b>$4.732B</b>、FCF <b>$1.531B</b>、FSD 訂閱 <b>1.74M</b>。財報會：FY26 CapEx 指引約 <b>$20B</b>（先前 &gt;$25B，L2）。</p>
+  <p class="note"><b>Q3 已結束</b>，本列改盯 Q4；下方圖表與逐季表的 Q3 實際不刪。有實際值的卡才分超／遜預期，目前實際皆待公布。<b>已採用的 Q4 預期（L2，非公司指引）：</b>Yahoo Finance 分析頁，對應 2026-11-12 美股收盤，2026-11-13 核對——總營收均值 <b>$29.31B</b>（28 家；低 $26.68B、高 $35.45B）、調整後 EPS 均值 <b>$0.50</b>（27 家；低 $0.34、高 $0.88）。同一頁 Q3 EPS 預估為 $0.45，與本頁 L1 IR 彙編一致，故只採這組。<b>未公布：</b>交付量、儲能部署、非 GAAP 淨利。ir.tesla.com 截至 2026-11-13 仍無 Q4 公司彙編（9/29 那份是 Q3：交付 461,974、儲能 15.9 GWh）；Q3 財報會亦無 Q4 交付或營收數字。不以全年共識減去已公布產銷回推 Q4，也不以 EPS×股數推算淨利。日期公司尚未宣布：產銷依往例在 <b>1 月上旬</b>（Q4'25 產銷為 2026-01-02，8-K），財報依往例在 <b>1 月下旬</b>（該則產銷稿寫明 Q4'25 財報為 2026-01-28；IR 季度表同日）。第三方日曆上的 1 月 27 日未採用。</p>
 </div>
 
 <div class="callout">
@@ -1291,7 +1291,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 </div>
 
 <footer>
-  <b>Tesla 資料來源．</b><span class="ly L1">L1</span> 官方 8-K／IR（Q3 2024–Q3 2026；SEC Exhibit 99.1 2026-10-21）；交付／儲能共識 Tesla North 轉述的公司彙編；股價 Yahoo Finance（11/12 收盤 $397.45，市值約 1.57 兆）；財報共識 Tesla IR 10/19 公司彙編（營收 $28.341B／非 GAAP EPS $0.45）對照實際。CapEx 指引 ~$20B：財報會（Reuters／Yahoo L2）。Cybercab 573：robotaxitracker 至 11/13；合計 1,303：EVwire／TxDMV 11/13。NHTSA：Electrek 11/5 引 10/30 機密聲明。FSD v14.3.13：Not a Tesla App，截至 11/13 未見更高版本號。<b>免責：</b>個人研究筆記，非投資建議。更新 2026-11-13。
+  <b>Tesla 資料來源．</b><span class="ly L1">L1</span> 官方 8-K／IR（Q3 2024–Q3 2026；SEC Exhibit 99.1 2026-10-21）；交付／儲能共識 Tesla North 轉述的公司彙編；股價 Yahoo Finance（11/12 收盤 $397.45，市值約 1.57 兆）；財報共識 Tesla IR 10/19 公司彙編（營收 $28.341B／非 GAAP EPS $0.45）對照 Q3 實際。CapEx 指引 ~$20B：財報會（Reuters／Yahoo L2）。Cybercab 573：robotaxitracker 至 11/13；合計 1,303：EVwire／TxDMV 11/13。NHTSA：Electrek 11/5 引 10/30 機密聲明。FSD v14.3.13：Not a Tesla App，截至 11/13 未見更高版本號。Q4 成績單：營收／調整後 EPS 取 Yahoo Finance 分析頁（2026-11-12：$29.31B、28 家；$0.50、27 家）。交付、儲能、非 GAAP 淨利未公布。<b>免責：</b>個人研究筆記，非投資建議。更新 2026-11-13。
 </footer>
 
 </div><!-- /viewT -->
@@ -1302,13 +1302,13 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 <div class="view viewB viewS" id="viewS">
 <div class="kicker">SpaceX · Quarterly Deep Dive · 逐季深度</div>
 <p style="font-size:23px;font-weight:800;margin:8px 0 4px">🚀 SpaceX（SPCX）逐季深度</p>
-<div class="note">2026/6/12 上市 ｜ 上市前估算 vs S-1 實際 ｜ 業務樹狀拆解 ｜ <b>Q3 2026 已公佈</b>（美 10/20 盤後）｜ 頂部成績單已填 Q3 實際</div>
+<div class="note">2026/6/12 上市 ｜ 上市前估算 vs S-1 實際 ｜ 業務樹狀拆解 ｜ <b>Q3 2026 已公佈</b>（美 10/20 盤後），實際留在下方逐季 ｜ 頂部成績單已改看 <b>Q4'26 預期</b></div>
 
-<!-- ============ 頂部：下一季預期 vs 實際（發佈後把「實際/差異」欄填上即可一目了然） ============ -->
+<!-- ============ 頂部：下一季預期 vs 實際（季報公布後只改 actual） ============ -->
 <div class="expect">
-  <div class="ehead"><div class="t">⏭️ Q3 2026 預期 vs 實際</div><div class="d" id="esumS"></div></div>
+  <div class="ehead"><div class="t">⏭️ Q4 2026 預期 vs 實際</div><div class="d" id="esumS"></div></div>
   <div class="egrid" id="egridS"></div>
-  <p class="note">有實際值的卡：綠＝超預期。大字為實際。<b>Q3 實際（2026-10-20 L1 IR）：</b>總營收 <b>145.8 億</b>（$14.575B，+161% YoY）vs 先前街共識 ~128.4 億；淨利 <b>44.0 億</b>（首份公開季報後首盈）；Adj EBITDA <b>88.1 億</b>；CapEx <b>196 億</b>（SI 164.4）；訂戶 <b>1,360 萬</b>（+160 萬 QoQ）、ARPU <b>$69</b>；SI 營收 75.6 億、營業利潤 +4.31 億；Connectivity 52.5 億；Space 17.7 億。銘牌算力 1.7 GW。</p>
+  <p class="note"><b>Q3 已結束</b>，本列改盯 Q4。Q3 實際不刪：總營收 <b>145.8 億</b>（$14.575B）、淨利 <b>44.0 億</b>、CapEx <b>196 億</b>（$19.593B）、訂戶 <b>1,360 萬</b>，見下方逐季。<b>總營收預期</b>取 Yahoo Finance 分析頁（2026-11-12 收盤，2026-11-13 核對）：當季（截至 2026 年 12 月）25 家均值 <b>$22.96B</b>（低 $19.09B、高 $27.39B）。這是賣方均值，不是公司指引。10/20 財報會沒有 Q4 營收數字。CFO Bret Johnsen 另指引 <b>Q1 2027 總營收 $33–37B</b>，以及 2026 年底 <b>$100B ARR</b>（12 月單月營收年化）；這兩項不填入 Q4 營收格。<b>總 CapEx</b>為同一場電話會的官方區間 <b>$35–40B</b>：色帶是區間，白線是中點 $37.5B，不是單點目標。Q4 總毛利率預期更接近 Q2。財報日期待公布。</p>
 </div>
 
 <div class="callout">
@@ -1339,7 +1339,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 </table></div>
 <p class="note">＊估算來源：Sacra、Payload、Morgan Stanley 等上市前研究；實際為 SpaceX S-1（2026/5/20）。2026 為分析師區間，離散極大（Morningstar 368 億至保守 238 億美元）。</p>
 <div class="callout warn">
-  <b>Q2 2026 已公佈（L1 IR · 美 8/4 盤後）：</b>總營收 <b>78.14 億</b>（+92% YoY）vs 共識 ~69 億；Space 9.62／Connectivity <b>42.91</b>（+66% YoY，營業利潤 16.56）／AI <b>25.61</b>（+247% YoY，營業虧 −12.57，Adj EBITDA 轉正 +11.5）。淨虧 <b>5.41 億</b>（EPS −$0.09 優於 −$0.26）；Adj EBITDA <b>35.4 億</b>（+191%）。<b>CapEx 183.7 億</b>（AI 158.3）為市場焦點——CFO：AI 回本期 &lt;1 年、下兩季 capex 類似；現金及約當～<b>935–1,000 億</b>（含 IPO）。訂戶 <b>12.0M</b> L1 季末（+1.7M QoQ）、ARPU $66 持平。Starshield 多年約 &gt;$60 億。Musk：YE26 衝 <b>$100B ARR</b> 節奏；Nvidia 獨家算力＋軌道 Starmind。<b>股價（更新）：</b>8/7 $133.11 → 8/12 $146.15（+9.7%）→ 8/20 第二檔鎖倉收 $134（−4%）→ 8/25 Louisiana 宣布 → 8/31 收 <b>$143.69</b>（市值約 <b>1.86 兆</b> L2），站穩 IPO $135 上方。52 週低 $104.83（8/3）。<b>其後（10/31 更新）：</b><b>Q3 已於 10/20 公佈</b>——營收 145.8 億、淨利 44.0 億、訂戶 13.6M、CapEx 196 億（見上方成績單，不改）。F14 已結案；下一發仍是 <b>F15（官方 NET 未公布；兩級靜火已完成；雙塔捕已官宣；尚未發射）</b>。10/22 季報檔收 $144.75（−9.14%）；10/24 鎖倉已過，10/26 收 $146.90（−0.40%）；<b>10/30 收 $134.72</b>（市值約 1.83 兆）。<b>11/9 更新：</b>11/6 收 <b>$134.27</b>（+8.62%，市值約 1.82 兆）；F15 官方窗口為澳門 11/14 06:45，尚未發射。<b>11/13 更新：</b>11/12 收 <b>$139.94</b>（+0.14%，市值約 1.90 兆）；F15 窗口未改，仍未發射。下一檔 <b>12/8</b>。Cursor $60B 已於 8/14 交割。GPU：10/24 承諾函約 400 億美元，主租賃尚未交割（8-K）。
+  <b>Q2 2026 已公佈（L1 IR · 美 8/4 盤後）：</b>總營收 <b>78.14 億</b>（+92% YoY）vs 共識 ~69 億；Space 9.62／Connectivity <b>42.91</b>（+66% YoY，營業利潤 16.56）／AI <b>25.61</b>（+247% YoY，營業虧 −12.57，Adj EBITDA 轉正 +11.5）。淨虧 <b>5.41 億</b>（EPS −$0.09 優於 −$0.26）；Adj EBITDA <b>35.4 億</b>（+191%）。<b>CapEx 183.7 億</b>（AI 158.3）為市場焦點——CFO：AI 回本期 &lt;1 年、下兩季 capex 類似；現金及約當～<b>935–1,000 億</b>（含 IPO）。訂戶 <b>12.0M</b> L1 季末（+1.7M QoQ）、ARPU $66 持平。Starshield 多年約 &gt;$60 億。Musk：YE26 衝 <b>$100B ARR</b> 節奏；Nvidia 獨家算力＋軌道 Starmind。<b>股價（更新）：</b>8/7 $133.11 → 8/12 $146.15（+9.7%）→ 8/20 第二檔鎖倉收 $134（−4%）→ 8/25 Louisiana 宣布 → 8/31 收 <b>$143.69</b>（市值約 <b>1.86 兆</b> L2），站穩 IPO $135 上方。52 週低 $104.83（8/3）。<b>其後（10/31 更新）：</b><b>Q3 已於 10/20 公佈</b>——營收 145.8 億、淨利 44.0 億、訂戶 13.6M、CapEx 196 億（實際留在本段與下方逐季；頂部成績單已改看 Q4）。F14 已結案；下一發仍是 <b>F15（官方 NET 未公布；兩級靜火已完成；雙塔捕已官宣；尚未發射）</b>。10/22 季報檔收 $144.75（−9.14%）；10/24 鎖倉已過，10/26 收 $146.90（−0.40%）；<b>10/30 收 $134.72</b>（市值約 1.83 兆）。<b>11/9 更新：</b>11/6 收 <b>$134.27</b>（+8.62%，市值約 1.82 兆）；F15 官方窗口為澳門 11/14 06:45，尚未發射。<b>11/13 更新：</b>11/12 收 <b>$139.94</b>（+0.14%，市值約 1.90 兆）；F15 窗口未改，仍未發射。下一檔 <b>12/8</b>。Cursor $60B 已於 8/14 交割。GPU：10/24 承諾函約 400 億美元，主租賃尚未交割（8-K）。
 </div>
 <div class="take">
   <b>連續解讀．</b>Q3 驗證「成長＋轉盈」：營收 145.8 億大超先前街共識、GAAP 淨利轉正 44.0 億，但 CapEx 升至 <b>196 億</b>（CFO 指 Q4 還要 350–400 億）。SI 段營收 75.6 億已超 Connectivity，營業利潤轉正。到 11/13：F14 已結案；下一發仍是 <b>F15（任務頁窗口澳門 11/14 06:45，26× V3，雙塔捕，尚未發射）</b>。股價自 11/6 的 $134.27 到 11/12 的 <b>$139.94</b>（+0.14%，市值約 1.90 兆）。10/24 供給已過，下一檔是 <b>12/8</b>。<u>營收與獲利故事已強化；資本開支、12/8 餘額、尚未交割的 GPU 租賃，以及 F15 雙捕能否落地，是下一章。</u>
@@ -1526,7 +1526,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 
 <div class="changelog">
   <b>變更日誌</b>
-    <div class="cl-item"><span class="cl-d">2026-11-13</span> 股價 11/12 <b>$139.94</b>（+0.14% · ~1.90 兆）；F15 仍未飛，官方窗口未改；下一檔 12/8；Falcon YTD 123；GPU 承諾函未見交割公告</div>
+    <div class="cl-item"><span class="cl-d">2026-11-13</span> 股價 11/12 <b>$139.94</b>（+0.14% · ~1.90 兆）；F15 仍未飛，官方窗口未改；下一檔 12/8；Falcon YTD 123；GPU 承諾函未見交割公告。頂部成績單改看 <b>Q4 預期</b>：營收為 Yahoo 25 家均值 $22.96B（非公司指引），CapEx 為官方區間 $35–40B。Q3 實際不刪</div>
     <div class="cl-item"><span class="cl-d">2026-11-09</span> 股價 11/6 <b>$134.27</b>（+8.62% · ~1.82 兆）；F15 仍未飛，官方窗口澳門 11/14 06:45；下一檔 12/8；Falcon YTD 122；GPU 承諾函未見交割公告</div>
   <div class="cl-item"><span class="cl-d">2026-10-31</span> 股價 10/30 <b>$134.72</b>（−6.37% · ~1.83 兆）；F15 仍未飛、兩級已靜火、官方 NET 未公布；10/24 鎖倉已過；下一檔 12/8；Falcon YTD 121；GPU 承諾函未交割</div>
   <div class="cl-item"><span class="cl-d">2026-10-22</span> 股價 10/21 <b>$159.31</b>（+7.79% · ~2.16 兆）；F15 仍未飛、NET 未公布；下一檔鎖倉 10/24；Falcon YTD ~118；Tesla Q3 同日入帳交叉情緒</div>
@@ -1553,7 +1553,7 @@ body{margin:0;background:#0b0e14;color:#e6edf3;
 </div>
 
 <footer>
-  <b>SpaceX 資料來源．</b><span class="ly L1">L1</span> 2026/5/20 S-1、Q2'26 IR PDF（8/4）、SpaceX IR／Yahoo 股價；<span class="ly L2">L2</span> CNBC／Reuters／WSJ、NSF／Spaceflight Now；<span class="ly L3">L3</span> 單位經濟敏感度。 股價 Yahoo／StockAnalysis（11/12 收 $139.94，市值約 $1.90T；Yahoo 篩選器 $1.901T）。<b>免責：</b>個人研究筆記，非投資建議。更新 2026-11-13。
+  <b>SpaceX 資料來源．</b><span class="ly L1">L1</span> 2026/5/20 S-1、Q2'26 IR PDF（8/4）、SpaceX IR／Yahoo 股價；<span class="ly L2">L2</span> CNBC／Reuters／WSJ、NSF／Spaceflight Now；<span class="ly L3">L3</span> 單位經濟敏感度。 股價 Yahoo／StockAnalysis（11/12 收 $139.94，市值約 $1.90T；Yahoo 篩選器 $1.901T）。Q4 成績單：營收取 Yahoo Finance 25 家均值 $22.96B（2026-11-12，非公司指引）；CapEx 為 CFO 2026-10-20 官方區間 $35–40B。<b>免責：</b>個人研究筆記，非投資建議。更新 2026-11-13。
 </footer>
 
 <script>
@@ -2250,17 +2250,17 @@ function _deadFcCharts_removed(){ return;
     {label:'Austin 無監督車隊',data:[12,25,14,28],borderColor:'#f85149',backgroundColor:'rgba(248,81,73,.12)',tension:.3,fill:true,borderWidth:2.5,pointRadius:4}
   ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{boxWidth:12,padding:12}},tooltip:{callbacks:{label:function(c){return c.parsed.y+' 台';}}}},scales:{x:{grid:g},y:{grid:g,beginAtZero:true,ticks:{callback:function(v){return v+' 台';}}}}}});
 }
-/* ===== 頂部「預期 vs 實際」成績單（財報公佈後：只改 actual 值，顏色/圖自動出來） ===== */
-var EXPECT_T={sub:'Q3 已公佈（10/2 產銷＋10/21 財報）· 更新 2026-11-13',items:[
-  {name:'交付量',unit:'萬台',dec:1,expect:46.1974,actual:48.6532,date:'10/2',note:'公司彙編 461,974（Tesla North 9/29）· 實際 486,532 L1',prev:[['上季',48.0126],['同期',49.7099]],goto:'tslaDeliv'},
-  {name:'儲能部署',unit:'GWh',dec:1,expect:15.9,actual:13.7,date:'10/2',note:'公司彙編 15.9 GWh（Tesla North 9/29）· 實際 13.7 L1',prev:[['上季',13.5],['同期',12.5]],goto:'tslaStorage'},
-  {name:'總營收',unit:'億美元',dec:1,expect:283.4,actual:280.5,date:'10/21',note:'IR 共識 $28.341B · 實際 $28.046B L1 Exhibit 99.1',prev:[['上季',282.4],['同期',281.0]],goto:'tslaBeatRev'},
-  {name:'調整後 EPS',unit:'美元',dec:2,expect:0.45,actual:0.48,date:'10/21',note:'IR 共識非 GAAP EPS $0.45 · 實際 $0.48 L1',prev:[['上季',0.33],['同期',0.50]],goto:'tslaBeatRev'},
-  {name:'非 GAAP 淨利',unit:'億美元',dec:1,expect:16.1,actual:17.0,date:'10/21',note:'共識由 EPS×股數推算 ~16.1 · 實際 $1.697B L1',prev:[['上季',12.0],['同期',17.7]],goto:'tslaProfit'}
+/* ===== 頂部「預期 vs 實際」成績單（季報公布後：只改 actual；expect 為 null 表示未公布） ===== */
+var EXPECT_T={sub:'Q4 預期／待公佈 · 截至 2026-11-13 · 營收／EPS：Yahoo Finance（11/12）· 交付／儲能／非 GAAP 淨利未公布',items:[
+  {name:'交付量',unit:'萬台',dec:1,expect:null,actual:null,date:'1月上旬',note:'未公布。IR 截至 11/13 無 Q4 公司彙編；日期待公布',prev:[['上季',48.6532],['同期',41.8227]],goto:'tslaDeliv'},
+  {name:'儲能部署',unit:'GWh',dec:1,expect:null,actual:null,date:'1月上旬',note:'未公布。IR 截至 11/13 無 Q4 公司彙編；日期待公布',prev:[['上季',13.7],['同期',14.2]],goto:'tslaStorage'},
+  {name:'總營收',unit:'億美元',dec:1,expect:293.1,actual:null,date:'1月下旬',note:'Yahoo 28 家均值 $29.31B（11/12；低 26.68／高 35.45）。非公司指引；日期待公布',prev:[['上季',280.5],['同期',249.0]],goto:'tslaBeatRev'},
+  {name:'調整後 EPS',unit:'美元',dec:2,expect:0.50,actual:null,date:'1月下旬',note:'Yahoo 27 家均值 $0.50（11/12；低 0.34／高 0.88）。非公司指引；日期待公布',prev:[['上季',0.48],['同期',0.50]],goto:'tslaBeatRev'},
+  {name:'非 GAAP 淨利',unit:'億美元',dec:1,expect:null,actual:null,date:'1月下旬',note:'未公布。同一來源無淨利共識，不以 EPS×股數推算',prev:[['上季',17.0],['同期',17.6]],goto:'tslaProfit'}
 ]};
-var EXPECT_S={sub:'Q3 已公佈（10/20）· 營收／CapEx 填實際 · 更新 2026-11-13',items:[
-  {name:'總營收',unit:'億美元',dec:1,expect:128.4,actual:145.8,date:'10/20',note:'街共識曾用 MarketScreener ~$12.84B · 實際 $14.575B L1 IR',prev:[['上季',78.1]],goto:'spxBeatRev'},
-  {name:'總 CapEx',unit:'億美元',dec:0,expect:184,actual:196,date:'10/20',neutral:true,note:'Q2 指引≈184 · 實際 $19.593B（SI 164.4）L1 IR',prev:[['上季',184]],goto:'spxTree'}
+var EXPECT_S={sub:'Q4 預期／待公佈 · 截至 2026-11-13 · 營收：Yahoo Finance（11/12）· CapEx：10/20 官方區間',items:[
+  {name:'總營收',unit:'億美元',dec:1,expect:229.6,actual:null,date:'待公布',note:'Yahoo 25 家均值 $22.96B（低 19.09／高 27.39）。非公司 Q4 指引',prev:[['上季',145.8]],goto:'spxBeatRev'},
+  {name:'總 CapEx',unit:'億美元',dec:0,expect:375,lo:350,hi:400,expectLabel:'350–400',actual:null,date:'待公布',neutral:true,note:'官方 $35–40B（CFO 10/20）。色帶為區間，白線為中點 $37.5B',prev:[['上季',196]],goto:'spxTree'}
 ]};
 function eFmt(v,dec){return Number(v).toLocaleString(undefined,{minimumFractionDigits:dec,maximumFractionDigits:dec});}
 function renderExpect(gridId,sumId,cfg){
@@ -2268,42 +2268,64 @@ function renderExpect(gridId,sumId,cfg){
   if(!el)return;
   var ok=0,bad=0,wait=0,html='';
   cfg.items.forEach(function(it){
+    var unpublished=it.expect==null;
+    var ranged=it.lo!=null&&it.hi!=null;
     var st,badge,diffTxt='',neg=it.showNeg?'−':'';
-    var d=it.actual==null?0:(it.actual-it.expect)/Math.abs(it.expect)*100;
+    var d=(it.actual==null||unpublished)?0:(it.actual-it.expect)/Math.abs(it.expect)*100;
     if(it.invert){diffTxt=(d<=0?'收斂 ':'擴大 ')+Math.abs(d).toFixed(1)+'%';}
     else{diffTxt=(d>=0?'+':'')+d.toFixed(1)+'%';}
     if(it.actual==null){st='wait';wait++;badge='⏳ 待公佈 · '+it.date;}
+    else if(unpublished){st='wait';wait++;badge='⏳ 預期未公布';}
     else if(it.neutral){st='neu';badge='ℹ️ '+diffTxt+' vs 預期';}
     else{
       var better=it.invert?(it.actual<=it.expect):(it.actual>=it.expect);
       st=better?'ok':'bad'; better?ok++:bad++;
       badge=(better?'✅ 超預期 ':'❌ 遜預期 ')+diffTxt;
     }
-    var maxv=Math.max(Math.abs(it.expect),Math.abs(it.actual||0))*1.18||1;
-    var mw=Math.abs(it.expect)/maxv*100;
-    var fw=it.actual==null?mw:Math.abs(it.actual)/maxv*100;
     var fc=st==='ok'?'#22c55e':st==='bad'?'#ef4444':st==='neu'?'#5b8def':'rgba(148,163,184,.35)';
-    var main=it.actual==null?eFmt(it.expect,it.dec):eFmt(it.actual,it.dec);
-    var cmp=it.actual==null?'實際:待公佈':'預期 '+neg+eFmt(it.expect,it.dec)+' '+it.unit;
+    var main,unitHtml;
+    if(it.actual!=null){main=eFmt(it.actual,it.dec);unitHtml='<small> '+it.unit+'</small>';}
+    else if(it.expectLabel){main=it.expectLabel;unitHtml='<small> '+it.unit+'</small>';}
+    else if(unpublished){main='未公布';unitHtml='';}
+    else{main=eFmt(it.expect,it.dec);unitHtml='<small> '+it.unit+'</small>';}
+    var cmp=it.actual==null?'實際：待公佈':(unpublished?'預期：未公布':'預期 '+neg+eFmt(it.expect,it.dec)+' '+it.unit);
     var prevHtml='';
     if(it.prev){
-      var cur=it.actual!=null?it.actual:it.expect;
+      var cur=it.actual!=null?it.actual:(unpublished?null:it.expect);
       it.prev.forEach(function(p){
-        var pd=(cur-p[1])/Math.abs(p[1])*100;
-        var dirGood=it.invert?pd<=0:pd>=0;
-        var cls=it.neutral?'':(dirGood?' class="up"':' class="down"');
-        prevHtml+=(prevHtml?' ｜ ':'')+p[0]+' '+neg+eFmt(p[1],it.dec)+(p[2]?'(估)':'')
-          +' <b'+cls+'>'+(pd>=0?'▲':'▼')+Math.abs(pd).toFixed(0)+'%</b>';
+        var extra='';
+        if(cur!=null&&p[1]!=null&&!ranged){
+          var pd=(cur-p[1])/Math.abs(p[1])*100;
+          if(Math.abs(pd).toFixed(0)==='0') extra=' 持平';
+          else{
+            var dirGood=it.invert?pd<=0:pd>=0;
+            var cls=it.neutral?'':(dirGood?' class="up"':' class="down"');
+            extra=' <b'+cls+'>'+(pd>=0?'▲':'▼')+Math.abs(pd).toFixed(0)+'%</b>';
+          }
+        }
+        prevHtml+=(prevHtml?' ｜ ':'')+p[0]+' '+neg+eFmt(p[1],it.dec)+(p[2]?'(估)':'')+extra;
       });
       prevHtml='<div class="eprev">'+prevHtml+'</div>';
     }
+    var barInner='';
+    if(ranged&&it.actual==null){
+      var maxR=Math.max(it.hi,Math.abs(it.expect)||0)*1.18||1;
+      var loW=it.lo/maxR*100,hiW=it.hi/maxR*100,midW=(it.expect!=null?it.expect:(it.lo+it.hi)/2)/maxR*100;
+      barInner='<div class="fill" style="position:absolute;left:'+loW.toFixed(1)+'%;width:'+(hiW-loW).toFixed(1)+'%;background:'+fc+'"></div>'
+        +'<div class="mark" style="left:'+midW.toFixed(1)+'%"></div>';
+    }else if(!(unpublished&&it.actual==null)){
+      var maxv=Math.max(Math.abs(it.expect||0),Math.abs(it.actual||0))*1.18||1;
+      var mw=Math.abs(it.expect||0)/maxv*100;
+      var fw=it.actual==null?mw:Math.abs(it.actual)/maxv*100;
+      barInner='<div class="fill" style="width:'+fw.toFixed(1)+'%;background:'+fc+'"></div>'
+        +(it.actual!=null&&!unpublished?'<div class="mark" style="left:'+mw.toFixed(1)+'%"></div>':'');
+    }
     html+='<div class="ecard '+st+(it.goto?' link':'')+'"'+(it.goto?' data-goto="'+it.goto+'" title="點擊跳到完整歷史圖"':'')+'>'
       +'<div class="en"><span>'+it.name+'</span><span class="edate">'+it.date+'</span></div>'
-      +'<div class="ev">'+neg+main+'<small> '+it.unit+'</small></div>'
+      +'<div class="ev">'+neg+main+unitHtml+'</div>'
       +'<div class="ecmp">'+cmp+(it.note?'｜'+it.note:'')+'</div>'
       +prevHtml
-      +'<div class="ebar"><div class="fill" style="width:'+fw.toFixed(1)+'%;background:'+fc+'"></div>'
-      +(it.actual!=null?'<div class="mark" style="left:'+mw.toFixed(1)+'%"></div>':'')+'</div>'
+      +'<div class="ebar">'+barInner+'</div>'
       +'<div class="ebadge '+st+'">'+badge+'</div>'
       +(it.goto?'<span class="elink">查看歷史 ↓</span>':'')
       +'</div>';
